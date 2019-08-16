@@ -1,7 +1,6 @@
 .video img {
     width: 100%;
     height: auto;
-    margin-top: 13em;
     box-shadow: 0.1em 0.2em 0.2em black;
     border-top: solid 5px rgb(87, 6, 21);
     border-bottom: solid 5px rgb(87, 6, 21);
@@ -26,7 +25,7 @@
     margin-right: 3em;
     margin-bottom: 3em;
     box-shadow: 2px 3px 5px black;
-    background-color: rgba(45,45,45,0.3);
+    background-color: rgba(45, 45, 45, 0.3);
 }
 
 .quisommesnous a:hover {
@@ -50,13 +49,13 @@
     padding-left: 2em;
     padding-right: 2em;
     box-shadow: 0.3em 0.5em 0.3em rgb(87, 6, 21);
-    background-color: rgba(45,45,45,0.3);
+    background-color: rgba(45, 45, 45, 0.3);
     border: solid 3px rgb(87, 6, 21);
 }
 
 
 .logobouteille {
-    background-image: url(16.png);
+    background-image: url(../images/logo/16.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 2em;
@@ -81,7 +80,7 @@
     border: solid 3px rgb(87, 6, 21);
     padding-left: 2em;
     padding-right: 2em;
-    background-color: rgba(45,45,45,0.3);
+    background-color: rgba(45, 45, 45, 0.3);
 }
 
 .event img {
@@ -102,14 +101,15 @@
 }
 
 .event a {
-    text-decoration: none;   
+    text-decoration: none;
+    color:white;
 }
 
-.event a:visited{
+.event a:visited {
     color: white;
 }
 
-.event a:visited:hover{
+.event a:visited:hover {
     color: rgb(87, 6, 21);
 }
 
@@ -130,7 +130,7 @@
     padding: 2em;
 }
 
-.commentaires{
+.commentaires {
     background-image: url(../images/divers/black.jpg);
     padding: 20px;
     border: solid 5px rgb(87, 6, 21);
@@ -144,7 +144,7 @@
     font-size: 1em;
 }
 
-.commentaires strong{
+.commentaires strong {
     color: rgb(87, 6, 21)
 }
 
@@ -176,13 +176,13 @@
     /*steps nombre de caract*/
 }
 
-.photo{
+.photo {
     display: flex;
     border: solid 5px rgb(87, 6, 21);
     border-radius: 3px;
 }
 
-/*slider*/
+/*start slide*/
 
 #slider {
     width: 80%;
@@ -236,19 +236,9 @@
         left: -1598.16px;
     }
 
-/*
-    90% {
-        left: -2130.88px;
-    }
-
-    95% {
-        left: -2130.88px;
-    }
-*/
-
     100% {
         left: -0px;
     }
 }
 
-/*fin de slider*/
+/*end slide*/
