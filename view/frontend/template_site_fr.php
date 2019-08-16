@@ -22,7 +22,7 @@
                 <li><a href="#">La cave et le bar</a></li>
                 <li> <a href="#">Actus</a></li>
                 <li><a href="#" id="laboutique">La boutique en ligne</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php?action=contact">Contact</a></li>
 
             </ul>
         </nav>
@@ -44,7 +44,7 @@
 
             <p>Envie de tout savoir? <br> Inscrivez-vous à notre newsletter <br><br>
                 <label for="nom">Nom :</label>&nbsp;&nbsp;&nbsp;
-                <input type="text" name="nom" placeholder="Quel est votre nom?" required autofocus /><br><br>
+                <input type="text" name="nom" placeholder="Quel est votre nom?" required/><br><br>
                 <label for="mail"> Mail :</label>&nbsp;&nbsp;&nbsp;
                 <input type="text" name="mail" placeholder="Quel est votre mail?" required />
                 <input type="submit" value="Valider" />

@@ -4,7 +4,11 @@
 
 
 try{
-    if(isset($_GET['action'])){
+    if(isset($_GET['action'])){ 
+        
+        if($_GET['action']=='contact'){
+            contact();
+        }
         
     }
 

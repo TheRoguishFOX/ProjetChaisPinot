@@ -75,7 +75,10 @@ nav li:hover{
 }
 
 
-
+section
+{
+    margin-top:12em;
+}
 
 body {
     background-attachment: fixed;
@@ -98,6 +101,11 @@ h3 {
     font-style: italic;
     font-weight: lighter;
 
+}
+ strong
+{
+   font-family: 'Dancing Script', cursive;
+    font-size: 1.5em; 
 }
 
 p {
