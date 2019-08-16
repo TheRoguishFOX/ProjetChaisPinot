@@ -4,14 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../public/css/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/headerFooter.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <?= $css ?>
     <title><?= $title_page ?></title>
+    
 </head>
 
 <body>
     <header>
 
-        <a href="#"> <img src="logo_Chais_Pinot/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
+        <a href="#"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
         <h1 id="hautdepage"></h1>
         <nav>
             <ul>

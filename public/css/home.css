@@ -1,0 +1,254 @@
+.video img {
+    width: 100%;
+    height: auto;
+    margin-top: 13em;
+    box-shadow: 0.1em 0.2em 0.2em black;
+    border-top: solid 5px rgb(87, 6, 21);
+    border-bottom: solid 5px rgb(87, 6, 21);
+}
+
+.quisommesnous {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+#center {
+    width: 100%;
+    text-align: center
+}
+
+.quisommesnous img {
+    width: 10em;
+    margin: 2em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+    box-shadow: 2px 3px 5px black;
+    background-color: rgba(45,45,45,0.3);
+}
+
+.quisommesnous a:hover {
+    transform: scale(1.5);
+}
+
+
+
+.deuxiemebloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.clickandcollect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    box-shadow: 0.3em 0.5em 0.3em rgb(87, 6, 21);
+    background-color: rgba(45,45,45,0.3);
+    border: solid 3px rgb(87, 6, 21);
+}
+
+
+.logobouteille {
+    background-image: url(16.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2em;
+    width: 150px;
+    height: 150px;
+}
+
+.logobouteille:hover {
+    background-image: url(../images/logo/logobouteilleinverse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    transform: scale(1.5);
+}
+
+
+.event {
+    text-align: center;
+    width: 40%;
+    box-shadow: -0.3em 0.5em 0.3em rgb(87, 6, 21);
+    border: solid 3px rgb(87, 6, 21);
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: rgba(45,45,45,0.3);
+}
+
+.event img {
+    width: 15em;
+    border-radius: 2em;
+    border: solid;
+    border-color: white;
+}
+
+.event button {
+    background-color: rgb(87, 6, 21);
+    border-radius: 1em;
+    border: solid white;
+    padding: 0.5em;
+    margin: 2em;
+    margin-top: 1em;
+    box-shadow: 0.1em 0.2em 0.2em black;
+}
+
+.event a {
+    text-decoration: none;   
+}
+
+.event a:visited{
+    color: white;
+}
+
+.event a:visited:hover{
+    color: rgb(87, 6, 21);
+}
+
+.event button:hover {
+    transform: scale(1.5);
+    border-color: white;
+    background-color: white;
+    color: rgb(87, 6, 21);
+    border-color: rgb(87, 6, 21);
+}
+
+
+
+.troisiemebloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.commentaires{
+    background-image: url(../images/divers/black.jpg);
+    padding: 20px;
+    border: solid 5px rgb(87, 6, 21);
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px black;
+}
+
+.com {
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.commentaires strong{
+    color: rgb(87, 6, 21)
+}
+
+#machine {
+    /*    font-family: 'Charmonman', cursive; */
+    font-family: 'Dancing Script', cursive;
+}
+
+/*création de la zone d'animation*/
+@-webkit-keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/*mise en place de l'animation*/
+.machinebox {
+    font-size: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    padding-right: 2em;
+    padding-left: 2em;
+    -webkit-animation: typing 5s steps(38, end);
+    /*steps nombre de caract*/
+}
+
+.photo{
+    display: flex;
+    border: solid 5px rgb(87, 6, 21);
+    border-radius: 3px;
+}
+
+/*slider*/
+
+#slider {
+    width: 80%;
+    max-width: 507.36px;
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 20s slidy infinite;
+}
+
+#slider figure img {
+    width: 21%;
+    max-height: 333.63px;
+    float: left;
+    margin: 0;
+}
+
+@keyframes slidy {
+    10% {
+        left: 0px;
+    }
+
+    30% {
+        left: -532.72px;
+    }
+
+    35% {
+        left: -532.72px;
+    }
+
+    50% {
+        left: -1065.44px;
+    }
+
+    55% {
+        left: -1065.44px;
+    }
+
+    70% {
+        left: -1598.16px;
+    }
+
+    75% {
+        left: -1598.16px;
+    }
+
+/*
+    90% {
+        left: -2130.88px;
+    }
+
+    95% {
+        left: -2130.88px;
+    }
+*/
+
+    100% {
+        left: -0px;
+    }
+}
+
+/*fin de slider*/
