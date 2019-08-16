@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 16 août 2019 à 14:24
--- Version du serveur :  5.7.24
--- Version de PHP :  7.3.1
+-- Client :  127.0.0.1
+-- Généré le :  Ven 16 Août 2019 à 15:44
+-- Version du serveur :  5.7.14
+-- Version de PHP :  5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -28,14 +26,38 @@ SET time_zone = "+00:00";
 -- Structure de la table `newsletter`
 --
 
-DROP TABLE IF EXISTS `newsletter`;
-CREATE TABLE IF NOT EXISTS `newsletter` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `newsMail` varchar(100) CHARACTER SET utf8 NOT NULL,
-  PRIMARY KEY (`id`,`newsMail`)
+CREATE TABLE `newsletter` (
+  `id` int(11) NOT NULL,
+  `newsMail` varchar(100) CHARACTER SET utf8 NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-COMMIT;
 
+--
+-- Contenu de la table `newsletter`
+--
+
+INSERT INTO `newsletter` (`id`, `newsMail`) VALUES
+(1, 'pamplume@pamplemousse'),
+(2, 'pamplume@pamplemousse');
+
+--
+-- Index pour les tables exportées
+--
+
+--
+-- Index pour la table `newsletter`
+--
+ALTER TABLE `newsletter`
+  ADD PRIMARY KEY (`id`,`newsMail`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `newsletter`
+--
+ALTER TABLE `newsletter`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

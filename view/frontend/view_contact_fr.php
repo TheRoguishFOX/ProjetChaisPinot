@@ -15,10 +15,10 @@ ob_start();
 
       <strong> Envie de tout savoir? Inscrivez-vous à notre newsletter!</strong>
 
-        <form action="#" method="post">
+        <form action="index.php?news=inscription" method="post">
 
             <label for="mail">Votre e-mail :</label>
-            <input type="email" id="mail" name="contact_mail">
+            <input type="email" id="mail" name="news_mail">
             <input type="submit" name="Envoyer">
         </form>
 
