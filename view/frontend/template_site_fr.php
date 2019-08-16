@@ -14,7 +14,7 @@
 <body>
     <header>
 
-        <a href="#"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
+        <a href="index.php"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
         <h1 id="hautdepage"></h1>
         <nav>
             <ul>
