@@ -79,16 +79,16 @@ ob_start();
             <img src="./public/images/logo/vin%20et%20verre.jpg" width="135">
             <div id="slider">
                 <figure>
-                    <img src="./public/images/divers/alcohol-bottles-alcoholic-beverage-bar-2664149.jpg">
+                    <img src="./public/images/divers/alcohol-bottles-alcoholic-beverage-bar-2664149.jpg" height="353.63">
                 </figure>
                 <figure>
-                    <img src="./public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg">
+                    <img src="./public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg" height="353.63">
                 </figure>
                 <figure>
-                    <img src="./public/images/divers/bottle-macro-shadow-121191.jpg">
+                    <img src="./public/images/divers/bottle-macro-shadow-121191.jpg" height="353.63">
                 </figure>
                 <figure>
-                    <img src="./public/images/divers/close-up-corks-glass-36741.jpg">
+                    <img src="./public/images/divers/close-up-corks-glass-36741.jpg" height="353.63">
                 </figure>
             </div>
         </article>

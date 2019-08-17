@@ -136,6 +136,8 @@
     border: solid 5px rgb(87, 6, 21);
     border-radius: 3px;
     box-shadow: 2px 3px 5px black;
+    
+
 }
 
 .com {
@@ -182,6 +184,7 @@
     border-radius: 3px;
 }
 
+
 /*start slide*/
 
 #slider {
@@ -202,7 +205,6 @@
 
 #slider figure img {
     width: 21%;
-    max-height: 333.63px;
     float: left;
     margin: 0;
 }
