@@ -66,8 +66,10 @@ ob_start();
     </article>
     <br><br>
     <article id="comments">
-       <strong> fuezhfulbzeiulfhe</strong>
+
         <div id="affichagecomments">
+            <strong>Ils en parlent mieux que nous </strong>
+            <br><br>
             <div class="com">Jean michel (12/12/2012):
                 <br>
                 <span>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
@@ -87,14 +89,76 @@ ob_start();
                     <br>
                     <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
                 <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
-            </div>   
-            
-            
-            
-            
+            </div>
+            <div class="article">
+                <br>
+                <div class="com">Jean michel (12/12/2012):
+                    <br>
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
+            </div>
+            <div class="article">
+                <br>
+                <div class="com">Jean michel (12/12/2012):
+                    <br>
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
+            </div>
+            <div class="article">
+                <br>
+                <div class="com">Jean michel (12/12/2012):
+                    <br>
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
+            </div>
+            <div class="article">
+                <br>
+                <div class="com">Jean michel (12/12/2012):
+                    <br>
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
+            </div>
         </div>
-        
-        
+
+        <p id="espaceComments"></p>
+
+
+        <div id="insertionComments">
+            <strong> Donnez votre avis !</strong>
+            <br><br>
+            <form action="" method="post">
+                <div>
+                    <label for="pseudo">Pseudo</label><br />
+                    <input type="text" id="pseudo" name="pseudo" />
+
+                    <label for="note">Note</label>
+                    <select name="note" id="note">
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="text">Commentaire</label><br />
+                    <textarea id="text" name="text" rows="10" cols="50"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" />
+                </div>
+            </form>
+
+
+
+        </div>
+
+        <!---->
+
+
+
     </article>
 
 
