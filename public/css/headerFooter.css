@@ -10,7 +10,7 @@
 #hamburger {
     display: none
 }
-
+$
 /* Décoration */
 .separateur{
     font-size: 3em;
@@ -24,7 +24,6 @@ header {
     position: fixed;
     z-index: 9998;
     width: 100%;
-    height: 10em;
     
     background-color: rgb(50, 50, 50);
     border-bottom: solid white;
