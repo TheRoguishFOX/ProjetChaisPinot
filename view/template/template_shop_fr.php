@@ -56,7 +56,7 @@
 
         <article class="footer">
             <p><a href="index.php?action=ConditionsGnrales"> Conditions générales</a><br><br>
-                <a href="#"> Mentions légales</a><br><br>
+                <a href="index.php?action=MentionsLegales"> Mentions légales</a><br><br>
                 <a href="#"> Haut de page</a><br><br>
                 <a href="#"> Retour accueil</a></p>
 

@@ -30,7 +30,7 @@ ob_start();
 
             <strong> Le bar </strong>
             <p> Envie d'un moment entre amis autour un bon verre de vin ou de bière? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam obcaecati voluptates culpa est fuga aut rerum, quas veritatis doloremque earum, maxime aperiam aliquid. Pariatur explicabo, architecto beatae optio doloremque vitae!</p>
-            <a href="#"> Pour tous savoir sur les actus du bar :
+            <a href="index.php?action=actus"> Pour tous savoir sur les actus du bar :
                 <i class="fas fa-glass-cheers"></i> </a><br>
             <img src="public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg">
         </div>

@@ -13,12 +13,16 @@
         require('./view/frontend/view_cavebar_fr.php');
     }
 
-function actus(){
+    function actus(){
         require('./view/frontend/view_actus_fr.php');
     }
 
-function ConditionsGnrales(){
+    function ConditionsGnrales(){
         require('./view/frontend/view_ConditionsGnrales_fr.php');
+    }
+
+    function MentionsLegales(){
+        require('./view/frontend/view_MentionsLegales_fr.php');
     }
 
 
