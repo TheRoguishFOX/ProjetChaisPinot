@@ -100,6 +100,6 @@ ob_start();
 
 </section>
 
-<?php $content = ob_get_clean(); ?>
+<?php $content = ob_get_clean();
 
-<?php require('./view/frontend/template_site_fr.php'); ?>
+require('./view/template/template_site_fr.php'); ?>

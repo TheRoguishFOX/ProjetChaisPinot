@@ -3,77 +3,90 @@
 @import url('https://fonts.googleapis.com/css?family=Charmonman|Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Charmonman&display=swap');
 
+:root {
+    --colorbordeau: rgb(87, 6, 21);
+}
+
+#hamburger {
+    display: none
+}
+
+/* Décoration */
 .separateur{
     font-size: 3em;
-    color: rgb(87, 6, 21);
+    color: var(--colorbordeau);
     text-align: center;
     margin: 2em;
 }
 
+/* start header */
 header {
-    background-color: rgb(50, 50, 50);
     position: fixed;
-    z-index: 9999;
+    z-index: 9998;
     width: 100%;
-    border: solid;
-    border-bottom-color: white;
     height: 10em;
-    display: flex;
-    justify-content: space-between;
+    
+    background-color: rgb(50, 50, 50);
+    border-bottom: solid white;
+    
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center
 
 }
 
-nav {
-    margin-right: 2em;
+header h1{
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    margin-top: -1em;
 }
+
 
 nav ul {
 
     list-style: none;
-    display: flex;
-    margin-top: 5em;
+    display: inline-flex;
 }
 
 nav li a {
-    font-weight: bolder;
     text-decoration: none;
+    font-weight: bolder;
     background-color: white;
-    color: rgb(87, 6, 21);
-    margin-right: 5px;
-    padding: 0.2em 1em 0.2em 1em;
-    box-shadow: 2px 3px 5px black;
-    font-size: 2em;
+    color:  var(--colorbordeau);
+    margin-right: 0.1em;
+    padding: 0.1em 1em 0.1em 1em;
+    box-shadow: 2px 3px 5px var(--colorbordeau);
+    font-size: 1.8em;
     font-family: 'Dancing Script', cursive;
 }
 
 nav li a:hover {
-    font-size: 2em;
-    background-color: rgb(87, 6, 21);
-    border-color: white;
+    font-size: 1.8em;
+    background-color:  var(--colorbordeau);
     color: white;
 }
 
-nav li:hover{
-    transform: scale(1.1);
-}
-
-#laboutique {
+#bigbutton {
     border: solid white 0.1em;
-    background-color: rgb(87, 6, 21);
+    background-color:  var(--colorbordeau);
     color: white;
     padding: 0.5em;
     border-radius: 0.4em;
 }
 
-#laboutique:hover {
-    font-size: 2em;
+#bigbutton:hover {
+    font-size: 1.8em;
     background-color: white;
-    color: rgb(87, 6, 21);
-    border-color: rgb(87, 6, 21);
-    border-width: 0.1em;
+    color:  var(--colorbordeau);
+    border-color:  var(--colorbordeau);
 }
 
+.flag:hover{
+    transform: scale(1.3);
+}
 
+/*setting commun a page*/
 section
 {
     margin-top:12em;
@@ -84,26 +97,42 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
     background-image: url('../images/divers/parquet.jpg');
     margin: 0;
 }
+h1{
+    font-size: 2em    
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 5em;
+    
+    display: inline-block;
+    border-bottom: 5px  var(--colorbordeau) solid;
+    border-bottom-right-radius: 15px;
+    
+    font-style: italic;
+    font-weight: lighter; 
+}
 
 h3 {
-    text-align: justify;
-    color: white;
     font-family: 'Dancing Script', cursive;
+    color: white;
     font-size: 4em;
-    border-bottom: 5px rgb(87, 6, 21) solid;
-    border-bottom-right-radius: 15px;
+    
     display: inline-block;
+    border-bottom: 5px  var(--colorbordeau) solid;
+    border-bottom-right-radius: 15px;
+    
     font-style: italic;
     font-weight: lighter;
 
 }
  strong
 {
-   font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 1.5em; 
 }
 
@@ -111,17 +140,16 @@ p {
     text-align: center;
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
+/* start footer */
 .footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     background-color: rgb(45, 45, 45);
     text-align: center;
-    /*    margin-left: 2em;*/
-    margin-right: :2em;
+    font-size: 0.7em;
 
 }
 
@@ -129,33 +157,210 @@ p {
     text-decoration: none;
     color: white;
 }
-
-
-.tiret {
-    border: solid;
-    border-width: 0px 5px 0px 0px;
-    border-right-color: rgb(87, 6, 21);
+footer a:hover{
+    font-size: 1em;
+    color:  var(--colorbordeau);
+    text-shadow: 2px 3px 2px white;
+    transform: scale(1.3)
 }
 
-.footer img {
-    width: 25px;
-    height: 25px;
+.tiret {
+    border-left:solid 0.2em var(--colorbordeau);
 }
 
 footer #logo a{
-    font-size: 3em;
+    font-size: 2em;
     color: white;
 }
+
 footer #logo a:hover{
-    font-size: 3em;
-    color: rgb(87, 6, 21);
+    color:  var(--colorbordeau);
     text-shadow: 2px 3px 2px white;
-    transform: scale(1.3)
+    transform: scale(1.2);
 }
 
-footer a:hover{
-    font-size: 1em;
-    color: rgb(87, 6, 21);
-    text-shadow: 2px 3px 2px white;
-    transform: scale(1.3)
+@media screen and (max-width: 1500px){
+    header #logotitle img{
+        width: 350px
+    }    
+}
+
+
+@media screen and (max-width: 1300px){
+    header #logotitle img{
+        width: 250px
+    }    
+}
+
+
+
+/*version tablette */
+@media screen and (max-width: 1130px){
+    
+    header #logotitle img{
+        width: 300px
+    }
+    
+    header h1{
+        font-size: 1.5em;
+    }
+    
+    /*Menu Wrap*/
+    #hamburger {
+        text-decoration: none;
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        margin-left: 10px;
+        margin-top: -15px;
+    }
+
+    #hamburger i {
+        font-size: 40px;
+        margin-top: 0.5em;
+        color: var(--colorbordeau); !important;
+    }
+
+    a#wrapper:target ~ #wrapper {
+        left: 0;
+        box-shadow: -4px 0 16px black;
+    }
+
+    a#wrapper:target ~ #close {
+        width: 100%;
+        height: 1500px;
+        cursor: default;
+    }
+
+    #wrapper {
+        transition: all 0.3s ease;
+        position: absolute;
+        width: 300px;
+        height: 500px;
+        left: -380px;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(45, 45, 45);
+        overflow: hidden;
+        z-index: 200;
+        border-right: solid 3px var(--colorbordeau);
+        border-bottom: solid 3px var(--colorbordeau);
+    }
+
+    #right-ul {
+        height: calc(100% - 170px);
+        box-shadow: 0 0 80px black;
+    }
+
+    #close {
+        position: absolute;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 199;
+    }
+
+
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+        margin-left: -20px;
+    }
+
+    header nav li a{
+        border: solid 3px
+    }
+
+}
+
+/*version phone */
+@media screen and (max-width: 720px){
+    
+    header #logotitle img{
+        width: 150px
+    }
+    
+    header h1{
+        font-size: 1em;
+    }
+    
+    /*Menu Wrap*/
+    #hamburger {
+        text-decoration: none;
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        margin-left: 10px;
+        margin-top: -15px;
+    }
+
+    #hamburger i {
+        font-size: 40px;
+        margin-top: 0.5em;
+        color: var(--colorbordeau); !important;
+    }
+
+    a#wrapper:target ~ #wrapper {
+        left: 0;
+        box-shadow: -4px 0 16px black;
+    }
+
+    a#wrapper:target ~ #close {
+        width: 100%;
+        height: 1500px;
+        cursor: default;
+    }
+
+    #wrapper {
+        transition: all 0.3s ease;
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        left: -380px;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(45, 45, 45);
+        overflow: hidden;
+        z-index: 200;
+        border-right: solid 3px var(--colorbordeau);
+        border-bottom: solid 3px var(--colorbordeau);
+    }
+
+    #right-ul {
+        height: calc(100% - 170px);
+        box-shadow: 0 0 80px black;
+    }
+
+    #close {
+        position: absolute;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 199;
+    }
+    
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+        font-size: 0.6em;
+        margin-left: -20px
+    }
+
+    header nav li a{
+        border: solid 3px
+    }
+    
+    footer{
+        font-size: 0.5em
+    }
+    
+    footer .valider{
+        margin-top: 10px
+    }
+
 }

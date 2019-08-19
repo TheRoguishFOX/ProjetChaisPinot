@@ -1,9 +1,13 @@
+:root {
+    --colorbordeau: rgb(87, 6, 21);
+}
+
 .video img {
     width: 100%;
     height: auto;
     box-shadow: 0.1em 0.2em 0.2em black;
-    border-top: solid 5px rgb(87, 6, 21);
-    border-bottom: solid 5px rgb(87, 6, 21);
+    border-top: solid 5px var(--colorbordeau);
+    border-bottom: solid 5px var(--colorbordeau);
 }
 
 .quisommesnous {
@@ -30,6 +34,7 @@
 
 .quisommesnous a:hover {
     transform: scale(1.5);
+    box-shadow: 2px 3px 5px black;
 }
 
 
@@ -48,9 +53,9 @@
     text-align: center;
     padding-left: 2em;
     padding-right: 2em;
-    box-shadow: 0.3em 0.5em 0.3em rgb(87, 6, 21);
+    box-shadow: 0.3em 0.5em 0.3em var(--colorbordeau);
     background-color: rgba(45, 45, 45, 0.3);
-    border: solid 3px rgb(87, 6, 21);
+    border: solid 3px var(--colorbordeau);
 }
 
 
@@ -76,8 +81,8 @@
 .event {
     text-align: center;
     width: 40%;
-    box-shadow: -0.3em 0.5em 0.3em rgb(87, 6, 21);
-    border: solid 3px rgb(87, 6, 21);
+    box-shadow: -0.3em 0.5em 0.3em var(--colorbordeau);
+    border: solid 3px var(--colorbordeau);
     padding-left: 2em;
     padding-right: 2em;
     background-color: rgba(45, 45, 45, 0.3);
@@ -91,7 +96,7 @@
 }
 
 .event button {
-    background-color: rgb(87, 6, 21);
+    background-color: var(--colorbordeau);
     border-radius: 1em;
     border: solid white;
     padding: 0.5em;
@@ -110,15 +115,19 @@
 }
 
 .event a:visited:hover {
-    color: rgb(87, 6, 21);
+    color: var(--colorbordeau);
 }
 
 .event button:hover {
     transform: scale(1.5);
     border-color: white;
     background-color: white;
-    color: rgb(87, 6, 21);
-    border-color: rgb(87, 6, 21);
+    color: var(--colorbordeau);
+    border-color: var(--colorbordeau);
+}
+
+.event a{
+    width: 100%;
 }
 
 
@@ -133,7 +142,7 @@
 .commentaires {
     background-image: url(../images/divers/black.jpg);
     padding: 20px;
-    border: solid 5px rgb(87, 6, 21);
+    border: solid 5px var(--colorbordeau);
     border-radius: 3px;
     box-shadow: 2px 3px 5px black;
     
@@ -147,7 +156,7 @@
 }
 
 .commentaires strong {
-    color: rgb(87, 6, 21)
+    color: var(--colorbordeau);
 }
 
 #machine {
@@ -180,7 +189,7 @@
 
 .photo {
     display: flex;
-    border: solid 5px rgb(87, 6, 21);
+    border: solid 5px var(--colorbordeau);
     border-radius: 3px;
 }
 

@@ -13,20 +13,40 @@
 
 <body>
     <header>
+        <div id="logotitle">
+            <a href="index.php"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
+            <h1>Click &amp; Buvette</h1>
+        </div>
+    <a id="wrapper" class="ancre"></a>
+    <a id="close" class="ancre"></a>
+    <a a href="#wrapper" id=hamburger>
+    <i class="fas fa-bars"></i>
+    </a>
+    <a href="#close" id="close">
+    </a>
 
-        <a href="index.php"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
-        <h1 id="hautdepage"></h1>
+    <div id="wrapper">
         <nav>
             <ul>
 
                 <li><a href="#">La cave et le bar</a></li>
                 <li> <a href="#">Actus</a></li>
-                <li><a href="#" id="laboutique">La boutique en ligne</a></li>
+                <li><a href="#" id="bigbutton">Connexion</a></li>
                 <li><a href="index.php?action=contact">Contact</a></li>
 
             </ul>
         </nav>
+    </div>
+        
+        <!-- bouton lang  -->
+        <div id=lang>
+            <a href="indexEn.php"><img src="./public/images/logo/eng.png" class="flag"></a>
+            <a href="index.php"><img src="./public/images/logo/fr.png" class="flag"></a>
+        </div>
+        
     </header>
+    
+    
     
     <br><br><br>
    
@@ -37,22 +57,20 @@
         <article class="footer">
             <p><a href="#"> Conditions générales</a><br><br>
                 <a href="#"> Mentions légales</a><br><br>
-                <a href="#hautdepage"> Haut de page</a><br><br>
+                <a href="#"> Haut de page</a><br><br>
                 <a href="#"> Retour accueil</a></p>
 
             <p class="tiret"></p>
 
             <p>Envie de tout savoir? <br> Inscrivez-vous à notre newsletter <br><br>
-                <label for="nom">Nom :</label>&nbsp;&nbsp;&nbsp;
-                <input type="text" name="nom" placeholder="Quel est votre nom?" required/><br><br>
                 <label for="mail"> Mail :</label>&nbsp;&nbsp;&nbsp;
                 <input type="text" name="mail" placeholder="Quel est votre mail?" required />
-                <input type="submit" value="Valider" />
+                <input type="submit" class="valider" value="Valider" />
             </p>
             <p class="tiret"></p>
             <p> Restez connectés: <br><br>
                 <strong id="logo"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i> </a></strong>
-                <strong id="logo"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> </a></strong>
+                <strong id="logo"> <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i> </a></strong>
                 
             </p>
         </article>

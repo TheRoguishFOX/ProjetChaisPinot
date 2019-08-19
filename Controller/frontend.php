@@ -17,4 +17,12 @@
     
         insert_newsletter($news_mail);
         require('./view/frontend/view_contact_fr.php');
-}
+    }
+
+    function shop_home(){
+        require('./view/frontend/view_shop_home_fr.php');
+    }
+
+    function shop(){
+        require('./view/frontend/view_shop_fr.php');
+    }
