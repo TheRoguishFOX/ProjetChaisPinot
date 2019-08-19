@@ -31,10 +31,6 @@
 }
 
 
-#lacave {
-        background-color: white;
-        color : black;
-}
 
 #lebar{
         background-color: rgba(255, 255, 255, 0.4);
@@ -49,9 +45,7 @@ background-color: rgba(255, 255, 255, 0.4);
 
 }
 
-#lebar {
-    margin:1em;
-}
+
 #lacave p {
     margin:1em;
     color : black
@@ -105,4 +99,16 @@ display : flex;
     color : white;
     margin: 2em;
     padding: 1em;
+    display: flex;
+    justify-content: space-around;
 }
+
+#espaceComments{
+    border : 1px var(--colorbordeau) solid;
+}
+
+#comments strong{
+    font-weight: lighter;
+}
+
+

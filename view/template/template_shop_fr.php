@@ -29,8 +29,8 @@
         <nav>
             <ul>
 
-                <li><a href="#">La cave et le bar</a></li>
-                <li> <a href="#">Actus</a></li>
+                <li><a href="index.php?action=cavebar">La cave et le bar</a></li>
+                <li> <a href="index.php?action=actus">Actus</a></li>
                 <li><a href="#" id="bigbutton">Connexion</a></li>
                 <li><a href="index.php?action=contact">Contact</a></li>
 
@@ -55,8 +55,8 @@
     <footer>
 
         <article class="footer">
-            <p><a href="#"> Conditions générales</a><br><br>
-                <a href="#"> Mentions légales</a><br><br>
+            <p><a href="index.php?action=ConditionsGnrales"> Conditions générales</a><br><br>
+                <a href="index.php?action=MentionsLegales"> Mentions légales</a><br><br>
                 <a href="#"> Haut de page</a><br><br>
                 <a href="#"> Retour accueil</a></p>
 

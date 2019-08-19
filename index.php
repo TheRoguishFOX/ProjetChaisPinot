@@ -14,6 +14,12 @@ try{
         }
         
         if(isset($_GET['action'])){
+            if($_GET['action']=='actus'){
+                actus();
+            }
+        }
+        
+        if(isset($_GET['action'])){
             if($_GET['action']=='contact'){
                 contact();
             }
@@ -28,11 +34,26 @@ try{
                 shop();
             }
         }
+        
+        if(isset($_GET['action'])){
+            if($_GET['action'] == 'ConditionsGnrales'){
+                ConditionsGnrales();
+            }
+        }
+        
+        if(isset($_GET['action'])){
+            if($_GET['action'] == 'MentionsLegales'){
+                MentionsLegales();
+            }
+        }
+        
         if(isset($_GET['news'])){
             if($_GET['news'] == 'inscription'){
                 testmail($_POST['news_mail']);
             }
         }
+        
+        
     }
     
     
