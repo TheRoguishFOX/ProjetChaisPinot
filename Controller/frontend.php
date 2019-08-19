@@ -13,6 +13,10 @@
         require('./view/frontend/view_cavebar_fr.php');
     }
 
+function actus(){
+        require('./view/frontend/view_actus_fr.php');
+    }
+
 
     function contact(){
         require('./view/frontend/view_contact_fr.php');

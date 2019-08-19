@@ -14,6 +14,12 @@ try{
         }
         
         if(isset($_GET['action'])){
+            if($_GET['action']=='actus'){
+                actus();
+            }
+        }
+        
+        if(isset($_GET['action'])){
             if($_GET['action']=='contact'){
                 contact();
             }
