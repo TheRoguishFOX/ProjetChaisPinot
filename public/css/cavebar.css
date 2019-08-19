@@ -1,0 +1,108 @@
+#histoireboutique {
+    display : flex;
+    align-items: center;
+}
+
+
+#histoireboutique img{
+    width: 15%;
+    margin : 2em;
+}
+
+#caveetbar strong {
+    border-bottom: 5px  var(--colorbordeau) solid;
+    border-bottom-right-radius: 15px;
+}
+
+#histoireboutique p{
+    text-align: left;
+}
+
+#caveproduits{
+    display:flex;
+    text-align: center;
+ 
+}
+
+#caveetbar img{
+    width : 10em;
+    padding : 0.5em;
+    box-shadow: 1px 1px 1px;
+}
+
+
+#lacave {
+        background-color: white;
+        color : black;
+}
+
+#lebar{
+        background-color: rgba(255, 255, 255, 0.4);
+        color : black;
+    margin:1em;
+}
+
+#lacave {
+background-color: rgba(255, 255, 255, 0.4);
+        color : black;
+    margin:1em;
+
+}
+
+#lebar {
+    margin:1em;
+}
+#lacave p {
+    margin:1em;
+    color : black
+
+}
+
+#lebar p {
+    margin:1em;
+    color : black;
+}
+
+#lebar i{
+    color : black;
+    font-size : 2em;
+}
+
+#lebar i:hover{
+    transform : scale(1.5);
+    color : var(--colorbordeau);
+}
+
+#lebar a{
+    text-decoration : none;
+    color : black;
+}
+#lebar a:hover{
+    font-size : 1.2em;
+    color : var(--colorbordeau);
+}
+
+#containerconfiance {
+display : flex;
+    justify-content: space-around;
+}
+
+#confiance strong{
+    margin-left:1em;
+}
+
+#confiance i{
+    color : var(--colorbordeau);
+}
+
+#confiance i:hover{
+    color : white;
+    transform : scale(1.5);
+}
+
+#comments {
+    background-color: rgb(45, 45, 45);
+    color : white;
+    margin: 2em;
+    padding: 1em;
+}

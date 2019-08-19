@@ -8,6 +8,11 @@
     function home(){
         require('./view/frontend/view_Home_fr.php');
     }
+    
+    function cavebar(){
+        require('./view/frontend/view_cavebar_fr.php');
+    }
+
 
     function contact(){
         require('./view/frontend/view_contact_fr.php');

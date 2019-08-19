@@ -7,6 +7,12 @@ try{
     if(isset($_GET['action']) || isset($_GET['news'])){ 
         
         if(isset($_GET['action'])){
+            if($_GET['action']=='cavebar'){
+                cavebar();
+            }
+        }
+        
+        if(isset($_GET['action'])){
             if($_GET['action']=='contact'){
                 contact();
             }
