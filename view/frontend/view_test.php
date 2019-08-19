@@ -1,8 +1,9 @@
 <?php
 
-    $data = $mail->fetchAll();
-
-    echo '<h1> abc=' . $data . '<h/1>';
-        
+    $bdd = new PDO("mysql:host=localhost;dbname=chaispinot",'ChaisPinot','');
     
-require('./view/template/template_site_fr.php');
+    $req = $bdd->prepare("SELECT COUNT(`newMail`) from newsletter WHERE `newMail` = 'mr.carte.florent@gmail.com'");
+            
+    $req->fetchAll();
+
+    echo "blablabla=" .$req . "!!!";
