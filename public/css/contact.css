@@ -1,19 +1,50 @@
 #Contactnewsletter{
-    display:flex;
-    background-color: rgb(87, 6, 21);
-color:white;
-    text-align: center;
-    
+text-align: center;
+    background-color: var(--colorbordeau);
+    color: white; 
+    margin-top: -5em;
 }
 
+#Contactnewsletter strong{
+    font-weight : lighter;
+    font-size : 1.5em;
+}
+
+#Contactnewsletter form{
+    padding-bottom:0.5em;
+}
 
 #containerContact
 {
    display:flex;
     text-align: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#containerContact strong {
+    border-bottom: 5px  var(--colorbordeau) solid;
+    border-bottom-right-radius: 15px;
 }
 
 #ContactFormulaire{
     background-color: rgb(45, 45, 45);
     color:white;
+    padding : 2em;
+    box-shadow: 2px 3px 5px var(--colorbordeau);
+    margin-bottom: 1em;
+}
+
+#ContactFormulaire strong {
+    border : none;
+    font-weight: lighter;
+}
+
+#contact i{
+    font-size : 2em;
+}
+
+#HorairesContact span {
+    font-weight: bolder;
+    color : var(--colorbordeau);
 }
