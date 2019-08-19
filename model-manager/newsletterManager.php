@@ -9,17 +9,18 @@ require_once("config.php");
         {
             $db = $this->dbConnect();
             $req = $db->prepare("SELECT COUNT(`newsMail`) as verif, `newsMail` from newsletter WHERE `newsMail` = ?");
-            $dataMail = $req->execute(array($postmail));
+            $reponse =$req->execute(array($postmail));
+            
             return $req;
         }
 
-        public function insert_newsletter($news_mail)
+        public function insert_newsletter($postmail)
         {
 
             $db = $this->dbConnect();
 
             $req = $db->prepare('INSERT INTO newsletter(newsMail) VALUES(?)');
-            $newMail = $req->execute(array($news_mail));
+            $newMail = $req->execute(array($postmail));
             return $newMail;
         }
 

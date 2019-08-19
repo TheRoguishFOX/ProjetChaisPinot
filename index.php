@@ -30,7 +30,7 @@ try{
         }
         if(isset($_GET['news'])){
             if($_GET['news'] == 'inscription'){
-                newsletter($_POST['news_mail']);
+                testmail($_POST['news_mail']);
             }
         }
     }
