@@ -41,7 +41,7 @@ ob_start();
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Dolores corporis, debitis aspernatur odit ex repellat accusantium repellendus similique maiores provident deleniti <br> possimus at est modi consequuntur blanditiis quaerat obcaecati labore.</p>
 
             <p><img src="public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg"></p>
-            <button><a href="#"> En savoir plus</a></button>
+            <button><a href="#">En savoir plus</a></button>
         </div>
 
     </article>
