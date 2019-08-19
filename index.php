@@ -6,6 +6,7 @@ try{
 
     if(isset($_GET['action']) || isset($_GET['news'])){ 
         
+        
         if(isset($_GET['action'])){
             if($_GET['action']=='cavebar'){
                 cavebar();
@@ -28,11 +29,7 @@ try{
             }
         }
         if(isset($_GET['news'])){
-            if($_GET['news']=='inscription'){
-//                if(isset($_POST['news_mail'])){
-//                   verifMail($_POST['news_mail']);
-//                }
-//                if($row = 0){
+            if($_GET['news'] == 'inscription'){
                 newsletter($_POST['news_mail']);
             }
         }

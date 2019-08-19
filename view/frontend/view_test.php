@@ -1,9 +1,12 @@
 <?php
+        
+    $db = new PDO("mysql:host=localhost;dbname=chaispinot",'ChaisPinot','');
 
-    $bdd = new PDO("mysql:host=localhost;dbname=chaispinot",'ChaisPinot','');
-    
-    $req = $bdd->prepare("SELECT COUNT(`newMail`) from newsletter WHERE `newMail` = 'mr.carte.florent@gmail.com'");
-            
-    $req->fetchAll();
+    $req = $db->prepare("SELECT COUNT(`newsMail`) as verif, `newsMail` from newsletter WHERE `newsMail` = ?");
+    $mail = $req->execute(array('mr.carte.florent@gmail.com'));
 
-    echo "blablabla=" .$req . "!!!";
+    $data = $req->fetch();
+
+    echo $data['verif'];
+
+    echo "<br><br>" . $data['newsMail'];

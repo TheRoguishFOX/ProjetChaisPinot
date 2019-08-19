@@ -21,7 +21,6 @@ ob_start();
             <input type="email" id="mail" name="news_mail">
             <input type="submit" name="Envoyer">
         </form>
-
     </article>
 
     <div id="containerContact">

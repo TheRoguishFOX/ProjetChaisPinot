@@ -5,13 +5,13 @@ require_once("config.php");
     class Newsletter extends DataConnect
     {
         
-//        public function test_mail($postmail)
-//        {
-//            $db = $this->dbConnect();
-//            $req = $db->prepare('SELECT COUNT(newMail) from newsletter WHERE newMail = ?');
-//            $mail = $req->execute(array($postmail));
-//            return $mail;
-//        }
+        public function test_mail($postmail)
+        {
+            $db = $this->dbConnect();
+            $req = $db->prepare("SELECT COUNT(`newsMail`) as verif, `newsMail` from newsletter WHERE `newsMail` = ?");
+            $dataMail = $req->execute(array($postmail));
+            return $req;
+        }
 
         public function insert_newsletter($news_mail)
         {
