@@ -85,7 +85,7 @@ ob_start();
                     <img src="./public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg" height="353.63">
                 </figure>
                 <figure>
-                    <img src="./public/images/divers/bottle-macro-shadow-121191.jpg" height="353.63">
+                    <img src="./public/images/divers/alcohol-bottles-alcoholic-beverage-bar-2664149.jpg" height="353.63">
                 </figure>
                 <figure>
                     <img src="./public/images/divers/close-up-corks-glass-36741.jpg" height="353.63">
