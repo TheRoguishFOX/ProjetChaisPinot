@@ -34,11 +34,20 @@ try{
                 shop();
             }
         }
+        
+        if(isset($_GET['action'])){
+            if($_GET['action'] == 'ConditionsGnrales'){
+                ConditionsGnrales();
+            }
+        }
+        
         if(isset($_GET['news'])){
             if($_GET['news'] == 'inscription'){
                 newsletter($_POST['news_mail']);
             }
         }
+        
+        
     }
     
     
