@@ -125,7 +125,7 @@ p {
     text-align: center;
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 /* start footer */
@@ -163,6 +163,7 @@ footer #logo a:hover{
     text-shadow: 2px 3px 2px white;
     transform: scale(1.2);
 }
+
 
 @media screen and (max-width: 1500px){
     header #logotitle img{

@@ -4,6 +4,10 @@
     color: white;
 }
 
+#Contactnewsletter h2{
+    margin : 0;
+}
+
 #Contactnewsletter form{
     padding-bottom:0.5em;
 }

@@ -8,7 +8,11 @@ $title_page = "Les actus";
 ob_start();
 ?>
 <section>
-
+     
+    <div id="foireauxvins">
+       
+        <h2> Foire aux vins</h2>
+    </div>
 
 
 

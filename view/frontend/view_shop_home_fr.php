@@ -26,7 +26,6 @@ ob_start();
                 <label><input type="checkbox"> Allemagne</label>
     </ul>
 </div>
-<h3>Clik &amp; Buvette !</h3>
 
 <div id="shop_home">
     <div class="cardH">
