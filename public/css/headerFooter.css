@@ -88,7 +88,7 @@ nav li a:hover {
 /*setting commun a page*/
 section
 {
-    margin-top:10em;
+    margin-top: 8em;
 }
 
 body {
@@ -116,30 +116,16 @@ h2{
     font-weight: lighter; 
 }
 
-h3 {
-    font-family: 'Dancing Script', cursive;
-    color: white;
-    font-size: 4em;
-    
-    display: inline-block;
-    border-bottom: 5px  var(--colorbordeau) solid;
-    border-bottom-right-radius: 15px;
-    
-    font-style: italic;
-    font-weight: lighter;
+a{
+  font-family: 'Roboto Mono', monospace;
+}
 
-}
- strong
-{
-    font-family: 'Dancing Script', cursive;
-    font-size: 2em; 
-}
 
 p {
     text-align: center;
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
 /* start footer */
@@ -182,9 +168,13 @@ footer #logo a:hover{
     header #logotitle img{
         width: 350px
     }    
+      
+    h2{
+        font-size: 4em;
+    }
     
-    section p {
-        font-size: 1em;
+    p{
+    font-size :1.5em;
     }
 }
 
@@ -192,13 +182,17 @@ footer #logo a:hover{
 @media screen and (max-width: 1300px){
     header #logotitle img{
         width: 250px
-    }    
+    } 
+    h2{
+        font-size: 3em;
+    }
+    
 }
 
 
 
 /*version tablette */
-@media screen and (max-width: 1130px){
+@media screen and (max-width: 1024px){
     
     header #logotitle img{
         width: 300px
@@ -276,19 +270,30 @@ footer #logo a:hover{
     header nav li a{
         border: solid 3px
     }
-
+    
+    h2 {
+        font-size : 2em;
+    }
+    p{
+        font-size : 1em;
+    }
+    
 }
 
 /*version phone */
 @media screen and (max-width: 720px){
     
+    
     header #logotitle img{
-        width: 150px
+        width: 150px;
+        margin-left: 2em;
     }
     
     header h1{
-        font-size: 1em;
+        font-size: 0.5em;
+        margin-left: 5em;
     }
+    
     
     /*Menu Wrap*/
     #hamburger {
@@ -359,11 +364,25 @@ footer #logo a:hover{
     }
     
     footer{
-        font-size: 0.5em
+        font-size: 0.5em;
     }
     
     footer .valider{
-        margin-top: 10px
+        margin-top: 10px;
     }
-
+    
+    header #lang img{
+        width : 30%;
+    }
+    section{
+    margin-top:1em;
+    }
+    
+    h2 {
+        font-size : 2em;
+    }
+    
+    p{
+        font-size : 1em;
+    }
 }

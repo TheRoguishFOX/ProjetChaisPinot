@@ -1,3 +1,7 @@
+#caveetbar{
+    margin-top : 4em;
+}
+
 #histoireboutique {
     display : flex;
     align-items: center;
@@ -5,14 +9,11 @@
 
 
 #histoireboutique img{
-    width: 15%;
+    width: 20em;
     margin : 2em;
+    box-shadow: 2px 2px 3px;
 }
 
-#caveetbar strong {
-    border-bottom: 5px  var(--colorbordeau) solid;
-    border-bottom-right-radius: 15px;
-}
 
 #histoireboutique p{
     text-align: left;
@@ -21,67 +22,83 @@
 #caveproduits{
     display:flex;
     text-align: center;
- 
 }
 
-#caveetbar img{
-    width : 10em;
+#caveproduits img{
+    width : 15em;
     padding : 0.5em;
-    box-shadow: 1px 1px 1px;
+    box-shadow: 2px 2px 3px;
+    margin-bottom: 1em;
 }
+
 
 
 
 #lebar{
-        background-color: rgba(255, 255, 255, 0.4);
-        color : black;
+    background-color: rgba(255, 255, 255, 0.4);
+    color : black;
     margin:1em;
 }
 
 #lacave {
-background-color: rgba(255, 255, 255, 0.4);
-        color : black;
+    background-color: rgba(255, 255, 255, 0.4);
+    color : black;
     margin:1em;
 
 }
 
 
-#lacave p {
+#caveproduits h2 {
     margin:1em;
     color : black
 
 }
 
-#lebar p {
+
+#caveproduits p {
     margin:1em;
-    color : black;
+    color : black
 }
+
 
 #lebar i{
     color : black;
     font-size : 2em;
 }
 
-#lebar i:hover{
-    transform : scale(1.5);
-    color : var(--colorbordeau);
-}
 
 #lebar a{
     text-decoration : none;
     color : black;
 }
+
 #lebar a:hover{
     font-size : 1.2em;
     color : var(--colorbordeau);
 }
 
-#containerconfiance {
-display : flex;
-    justify-content: space-around;
+#lacave i{
+    color : black;
+    font-size : 2em;
 }
 
-#confiance strong{
+#lacave a{
+    text-decoration : none;
+    color : black;
+}
+
+#lacave a:hover{
+    font-size : 1.2em;
+    color : var(--colorbordeau);
+}
+
+#containerconfiance {
+    display : flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#confiance h2{
     margin-left:1em;
 }
 
@@ -92,6 +109,11 @@ display : flex;
 #confiance i:hover{
     color : white;
     transform : scale(1.5);
+}
+
+#confiance img{
+    width: 10em;
+    box-shadow: 2px 2px 3px;
 }
 
 #comments {
@@ -107,8 +129,102 @@ display : flex;
     border : 1px var(--colorbordeau) solid;
 }
 
-#comments strong{
-    font-weight: lighter;
+/*on permet à la zone message de pouvoir se redimmensionner en fonction du responsive*/
+
+textarea[name=text]{
+    overflow:scroll;
+    resize:both;
 }
 
+@media screen and (max-width: 1024px){
+    
+    textarea[name=text]{
+     resize : none;
+     min-width : 100px;
+     min-height : 100px;
+     max-width : 300px;
+     max-height : 300px;
+    }
+    
+    #espaceComments{
+    margin : 1em;
+    }
+    
+    #histoireboutique img{
+    width: 10em;
+    }
+    
+    #caveproduits img{
+    width : 10em;
+    }
+    
+    #confiance img{
+    width: 8em;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    
+    textarea[name=text]{
+     resize : none;
+     min-width : 100px;
+     min-height : 100px;
+     max-width : 375px;
+     max-height : 375px;
+    }
+    
+    #histoireboutique {
+    flex-direction: column;
+    text-align: center;
+    }
+    
+    #histoireboutique p{
+    text-align: center;
+    }
+    
+    #histoireboutique img{
+    width: 8em;
+    margin : 0.5em;
+    box-shadow: 2px 2px 3px;
+    }
+    
+    #caveproduits{
+    flex-direction: column;
+    }
+    
+    #containerconfiance {
+    flex-direction: column;
+    }  
+    
+    #comments {
+    flex-direction: column;
+    }
+    
+    #caveproduits img{
+    width : 8em;
+    padding : 0.5em;
+    box-shadow: 2px 2px 3px;
+    margin-bottom: 1em;
+    }
+    
+    #confiance img{
+    width: 5em;
+    box-shadow: 2px 2px 3px;
+    }
+
+    #confiance h2{
+    margin-left:1.8em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    textarea[name=text]{
+     resize : none;
+     min-width : 100px;
+     min-height : 100px;
+     max-width : 250px;
+     max-height : 250px;
+    }
+}
 

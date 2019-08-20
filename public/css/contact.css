@@ -1,32 +1,35 @@
 #Contactnewsletter{
-text-align: center;
+    text-align: center;
     background-color: var(--colorbordeau);
-    color: white; 
-}
-
-#Contactnewsletter strong{
-    font-weight : lighter;
-    font-size : 1.5em;
+    color: white;
 }
 
 #Contactnewsletter form{
     padding-bottom:0.5em;
 }
 
-#containerContact
-{
+#containerContact{
    display:flex;
     text-align: center;
     justify-content: space-around;
     width: 100%;
 }
 
-#containerContact strong {
-    border-bottom: 5px  var(--colorbordeau) solid;
-    border-bottom-right-radius: 15px;
+#containerContact h2{
+    color : black;
 }
 
-#ContactFormulaire{
+#ContactCoordonnees a{
+    text-decoration: none;
+    color : white;
+}
+
+#ContactCoordonnees a:hover{
+    color : var(--colorbordeau);
+}
+
+
+#ContactFormulaire {
     background-color: rgb(45, 45, 45);
     color:white;
     padding : 2em;
@@ -34,9 +37,10 @@ text-align: center;
     margin-bottom: 1em;
 }
 
-#ContactFormulaire strong {
+#ContactFormulaire h2 {
     border : none;
     font-weight: lighter;
+    color : white;
 }
 
 #contact i{
@@ -46,4 +50,38 @@ text-align: center;
 #HorairesContact span {
     font-weight: bolder;
     color : var(--colorbordeau);
+}
+@media screen and (max-width: 1500px){
+    
+    #containerContact{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width: 1024px){
+    
+    #Contactnewsletter h2{
+    font-size: 1.5em;
+    }
+    
+    #containerContact{
+        flex-wrap: wrap;
+    }
+    
+    
+}
+
+@media screen and (max-width: 720px){
+    
+    
+    #Contactnewsletter h2{
+    font-size: 1em;
+    }
+    
+    #containerContact{
+    flex-direction: column;
+    }
+    
+
 }

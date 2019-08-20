@@ -11,33 +11,31 @@ ob_start();
     </article>
     <br><br><br>
     <article id="quisommesnous">
-        <div id="center">
-            <h3> Une cave, un bar</h3>
-        </div>
+
 
         <div class="quisommesnous">
             <a href="#"><img src="./public/images/logo/logo_Chais_Pinot_vitrine_blanc.png"></a>
             <div class="text">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam minima nam illo non commodi fugiat rerum mollitia numquam, dolorem modi doloribus aperiam quam corporis at voluptas, reprehenderit, ducimus sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id maiores totam aliquam rerum accusantium repellat atque iste minus dolorem, dolores molestiae obcaecati voluptas, quidem at assumenda omnis libero error hic.<br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, quia, excepturi quibusdam voluptate ad itaque deleniti delectus necessitatibus amet accusantium labore quae non mollitia dolore! Nisi natus mollitia animi atque!</p>
+         <h2> Une cave, un bar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam minima nam illo non commodi fugiat rerum mollitia numquam, dolorem modi doloribus aperiam quam corporis at voluptas, reprehenderit, ducimus sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id maiores totam aliquam rerum accusantium repellat atque iste minus dolorem, dolores molestiae obcaecati voluptas, quidem at assumenda omnis libero error hic.</p>
             </div>
         </div>
     </article>
 
-    <div class="separateur"><i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i>~<i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i></div>
+    <div class="separateur">
+    <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i>~<i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i></div>
 
     <article class="deuxiemebloc">
         <div class="clickandcollect">
             <div class="texte2">
-                <h3> La boutique en ligne</h3>
+                <h2> La boutique en ligne</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corporis,<br> debitis aspernatur odit ex repellat accusantium repellendus similique maiores provident deleniti possimus at est modi consequuntur <br>blanditiis quaerat obcaecati labore.</p>
             </div>
             <div class="logobouteille"><a href="#"></a></div>
         </div>
         <p class="tiret"></p>
         <div class="event">
-            <h3> Les actus</h3>
+            <h2> Les actus</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Dolores corporis, debitis aspernatur odit ex repellat accusantium repellendus similique maiores provident deleniti <br> possimus at est modi consequuntur blanditiis quaerat obcaecati labore.</p>
 
             <p><img src="public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg"></p>

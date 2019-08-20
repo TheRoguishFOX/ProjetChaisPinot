@@ -11,7 +11,7 @@ ob_start();
     <article id="histoireboutique">
         <img src="public/images/divers/77220FC6-33EA-4ED3-A108-5EE0349E54FA.jpeg">
         <div id="pourlapetitehistoire">
-            <strong> Pour la petite histoire </strong><br>
+            <h2> Pour la petite histoire </h2><br>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, temporibus, nobis laborum architecto necessitatibus expedita. Esse doloremque minus molestiae, itaque quasi ducimus tenetur maiores eligendi repellat, modi, impedit hic. Atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quo, dolor dignissimos doloribus hic aperiam voluptatem explicabo nobis, autem nesciunt, culpa.
                 Consequuntur id modi incidunt veniam sint. Praesentium, aperiam quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti similique tempora cumque fugiat quam. Fugiat, non, eius. Doloribus itaque repudiandae placeat dolorum ratione expedita totam facilis, magni voluptas debitis labore.</p>
         </div>
@@ -20,25 +20,29 @@ ob_start();
     <article id="caveproduits">
         <div id="lacave">
 
-            <strong> La cave </strong>
-            <p> nos produits... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam obcaecati voluptates culpa est fuga aut rerum, quas veritatis doloremque earum, maxime aperiam aliquid. Pariatur explicabo, architecto beatae optio doloremque vitae!
-                <br> Coffrets cadeaux, location fût...</p>
+            <h2> La cave </h2>
+            <p> Nous vous proposons un grand choix de vins, bières, champagnes et spiritueux. Du petit prix au grand cru classé, Florent sera vous conseiller pour faire le meilleur choix en fonction de vos envies et de votre budget.
+                <br> Coffret cadeaux, paniers garnis, coffrets vins, nous vous proposons égelement un grand choix de verres et carafes pour faire plaisir ou se faire plaisir.
+                <br> Nous pouvons également vous conseiller et vous fournir pour vos mariages, baptêmes, ...
+            </p>
+            <p><i class="fas fa-wine-bottle"></i> <a href="index.php?action=actus"> Tout savoir sur les actus de la cave
+                </a></p><br><br>
             <img src="public/images/divers/alcohol-bottles-alcoholic-beverage-bar-2664149.jpg">
         </div>
 
         <div id="lebar">
 
-            <strong> Le bar </strong>
-            <p> Envie d'un moment entre amis autour un bon verre de vin ou de bière? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam obcaecati voluptates culpa est fuga aut rerum, quas veritatis doloremque earum, maxime aperiam aliquid. Pariatur explicabo, architecto beatae optio doloremque vitae!</p>
-            <a href="index.php?action=actus"> Pour tous savoir sur les actus du bar :
-                <i class="fas fa-glass-cheers"></i> </a><br>
+            <h2> Le bar </h2>
+            <p> Envie d'un moment entre amis autour d'un verre? <br>Le bar à l'étage et la terrasse extérieure vous accueille pour un moment de détente. L'occasion pour vous de goûter les différents produits disponibles dans le magasin, sur les conseils de Florent. <br>Découvrez toute la richesse du patrimoine viticole français, des différentes bières de nos régions accompagnés d'une planche de charcuterie pour les plus gourmands.<br>Jeux de société, concerts... Plusieurs activités  vous sont proposées tout au long de l'année. </p>
+            <p><i class="fas fa-glass-cheers"></i> <a href="index.php?action=actus"> Tout savoir sur les actus du bar
+           </a></p><br><br>
             <img src="public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg">
         </div>
     </article>
     <br><br>
 
     <article id="confiance">
-        <strong> Ils nous font confiance </strong>
+        <h2> Ils nous font confiance </h2>
         <br><br>
         <div id="containerconfiance">
             <div id="laterrasse">
@@ -68,7 +72,7 @@ ob_start();
     <article id="comments">
 
         <div id="affichagecomments">
-            <strong>Ils en parlent mieux que nous </strong>
+            <h2>Ils en parlent mieux que nous </h2>
             <br><br>
             <div class="com">Jean michel (12/12/2012):
                 <br>
@@ -124,7 +128,7 @@ ob_start();
 
 
         <div id="insertionComments">
-            <strong> Donnez votre avis !</strong>
+            <h2> Donnez votre avis !</h2>
             <br><br>
             <form action="" method="post">
                 <div>
@@ -133,6 +137,7 @@ ob_start();
 
                     <label for="note">Note</label>
                     <select name="note" id="note">
+                       <option value="0"></option>
                         <option value="1"> 1 </option>
                         <option value="2"> 2 </option>
                         <option value="3"> 3 </option>

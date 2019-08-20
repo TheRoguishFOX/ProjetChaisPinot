@@ -14,7 +14,7 @@
 <body>
     <header>
         <div id="logotitle">
-            <a href="index.php"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
+            <a href="index.php"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a><br><br>
             <h1>After WORK &amp; Before LUNCH</h1>
         </div>
     <a id="wrapper" class="ancre"></a>

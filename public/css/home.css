@@ -18,15 +18,10 @@
     margin: auto;
 }
 
-#center {
-    width: 100%;
-    text-align: center
-}
 
 .quisommesnous img {
     width: 10em;
     margin: 2em;
-    margin-right: 3em;
     margin-bottom: 3em;
     box-shadow: 2px 3px 5px black;
     background-color: rgba(45, 45, 45, 0.3);
@@ -36,7 +31,6 @@
     transform: scale(1.5);
     box-shadow: 2px 3px 5px black;
 }
-
 
 
 .deuxiemebloc {
@@ -253,3 +247,27 @@
 }
 
 /*end slide*/
+
+@media screen and (max-width: 480px){
+    
+    section{
+        margin-top: 2em;
+    }
+    
+    .quisommesnous {
+    flex-direction: column;
+        
+    }
+    
+    .quisommesnous img {
+    width: 5em;
+    margin: 0;
+    margin-bottom: 0;
+    }
+    
+    #deuxiemebloc{
+    flex-direction: column;
+    }
+
+    
+}

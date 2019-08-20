@@ -13,7 +13,7 @@ ob_start();
 
     <article id="Contactnewsletter">
 
-      <strong> Envie de tout savoir? Inscrivez-vous à notre newsletter!</strong><br><br>
+      <h2> Envie de tout savoir? Inscrivez-vous à notre newsletter!</h2>
 
         <form action="index.php?news=inscription" method="post">
 
@@ -27,42 +27,42 @@ ob_start();
 
         <article id="ContactCoordonnees">
             <i class="fas fa-map-marker"></i>
-            <strong> Le Chais Pinot</strong>
+            <h2> Le Chais Pinot</h2>
             <p> 1 Rue d'Arras - 62140 Hesdin</p>
 
             <i class="fas fa-mobile-alt"></i>
-            <strong> Téléphone </strong>
+            <h2> Téléphone </h2>
             <p>06 32 20 82 72</p>
 
             <i class="fas fa-map-marked-alt"></i>
-            <strong> Coordonnées GPS </strong>
+            <h2> Coordonnées GPS </h2>
             <p>50°22'26.8"N 2°02'17.5"E</p>
-            <a href="https://www.google.fr/maps/place/Chais+pinot/@50.3738729,2.0360595,17z/data=!4m13!1m7!3m6!1s0x47dda327cbca8549:0xa5a7e28a3fed6c4e!2s1+Rue+d'Arras,+62140+Marconne!3b1!8m2!3d50.3738729!4d2.0382482!3m4!1s0x47dda327c9915555:0x1a430917c9a38297!8m2!3d50.3738729!4d2.0382482"> lien Google Maps </a>
+            <a href="https://www.google.fr/maps/place/Chais+pinot/@50.3738729,2.0360595,17z/data=!4m13!1m7!3m6!1s0x47dda327cbca8549:0xa5a7e28a3fed6c4e!2s1+Rue+d'Arras,+62140+Marconne!3b1!8m2!3d50.3738729!4d2.0382482!3m4!1s0x47dda327c9915555:0x1a430917c9a38297!8m2!3d50.3738729!4d2.0382482"> Retrouvez ici le plan sur Google Maps </a>
             <br><br>
             <br>
         </article>
             <article id="HorairesContact">
 
             <i class="fas fa-clock"></i>
-            <strong> Horaires d'ouverture </strong>
+            <h2> Horaires d'ouverture </h2>
             <p> <span>Lundi</span> : Fermé<br>
                 <span>Mardi</span> <br> 
-                10:00 – 12:30 / 14:00 – 22:00<br>
+                10h00 – 12h30 / 14h00 – 22h00<br>
                 <span>Mercredi</span> <br> 
-                10:00 – 12:30 / 14:00 – 22:00<br>
+                10h00 – 12h30 / 14h00 – 22h00<br>
                 <span>Jeudi</span> <br> 
-                10:00 – 12:30 / 14:00 – 22:00<br>
+                10h00 – 12h30 / 14h00 – 22h00<br>
                 <span>Vendredi</span> <br> 
-                10:00 – 12:30 / 14:00 – 22:00<br>
+                10h00 – 12h30 / 14h00 – 22h00<br>
                 <span>Samedi</span> <br> 
-                10:00 – 12:30 / 14:00 – 22:00<br>
+                10h00 – 12h30 / 14h00 – 22h00<br>
                 <span>Dimanche</span> : Fermé</p>
 
         </article>
 
         <article id="ContactFormulaire">
 
-            <strong> Besoin d'un renseignement? <br>Contactez-nous </strong>
+            <h2> Besoin d'un renseignement? <br>Contactez-nous </h2>
             <br><br>
             <form action="#" method="post">
                 <label for="name">Votre nom :</label>
