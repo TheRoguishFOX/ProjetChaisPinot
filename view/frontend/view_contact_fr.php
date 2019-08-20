@@ -37,7 +37,7 @@ ob_start();
             <i class="fas fa-map-marked-alt"></i>
             <h2> Coordonnées GPS </h2>
             <p>50°22'26.8"N 2°02'17.5"E</p>
-            <a href="https://www.google.fr/maps/place/Chais+pinot/@50.3738729,2.0360595,17z/data=!4m13!1m7!3m6!1s0x47dda327cbca8549:0xa5a7e28a3fed6c4e!2s1+Rue+d'Arras,+62140+Marconne!3b1!8m2!3d50.3738729!4d2.0382482!3m4!1s0x47dda327c9915555:0x1a430917c9a38297!8m2!3d50.3738729!4d2.0382482"> Retrouvez ici le plan sur Google Maps </a>
+            <a href="https://www.google.fr/maps/place/Chais+pinot/@50.3738729,2.0360595,17z/data=!4m13!1m7!3m6!1s0x47dda327cbca8549:0xa5a7e28a3fed6c4e!2s1+Rue+d'Arras,+62140+Marconne!3b1!8m2!3d50.3738729!4d2.0382482!3m4!1s0x47dda327c9915555:0x1a430917c9a38297!8m2!3d50.3738729!4d2.0382482"> Retrouvez ici le plan sur Google Maps</a>
             <br><br>
             <br>
         </article>

@@ -170,12 +170,13 @@ footer #logo a:hover{
     }    
       
     h2{
-        font-size: 4em;
+        font-size: 2.5em;
     }
     
     p{
-    font-size :1.5em;
+    font-size :1em;
     }
+    
 }
 
 
@@ -275,9 +276,16 @@ footer #logo a:hover{
         font-size : 2em;
     }
     p{
-        font-size : 1em;
+        font-size : 0.8em;
     }
     
+    section{
+        margin-top : 5em;
+    }
+    
+    a{
+        font-size: 0.8em;
+    }
 }
 
 /*version phone */
@@ -379,10 +387,13 @@ footer #logo a:hover{
     }
     
     h2 {
-        font-size : 2em;
+        font-size : 1.5em;
     }
     
     p{
-        font-size : 1em;
+        font-size : 0.8em;
+    }
+    a{
+        font-size: 0.8em;
     }
 }

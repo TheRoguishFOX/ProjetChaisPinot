@@ -20,12 +20,11 @@
 }
 
 #ContactCoordonnees a{
-    text-decoration: none;
-    color : white;
+    color : var(--colorbordeau);;
 }
 
 #ContactCoordonnees a:hover{
-    color : var(--colorbordeau);
+    color : white;
 }
 
 
@@ -68,6 +67,8 @@
     #containerContact{
         flex-wrap: wrap;
     }
+    
+    
     
     
 }
