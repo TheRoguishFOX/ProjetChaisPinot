@@ -2,15 +2,24 @@
 
     require_once ('./model-manager/frontend.php');
     require_once('./model-manager/newsletterManager.php');
+    require_once('./model-manager/commentManager.php');
 
 
 
     function home(){
+        $list_com = new Comments;
+        $coms = $list_com->listCommentsHome();
         require('./view/frontend/view_Home_fr.php');
     }
     
     function cavebar(){
+        $list_com = new Comments;
+        $coms = $list_com->listComments();
         require('./view/frontend/view_cavebar_fr.php');
+    }
+    function insert_comment($pseudo, $text, $note){
+        $news_coms = new Comments;
+        $_data = $news_coms->postComments($pseudo, $text, $note);   
     }
 
     function actus(){

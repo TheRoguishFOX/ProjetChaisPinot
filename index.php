@@ -8,8 +8,14 @@ try{
         
         
         if(isset($_GET['action'])){
+            
             if($_GET['action']=='cavebar'){
                 cavebar();
+                if(isset($_POST['valid'])){
+                    if(!empty($_POST['pseudo'] && $_POST['text'] && $_POST['note'])){
+                    insert_comment(htmlspecialchars($_POST['pseudo']), htmlspecialchars($_POST['text']), $_POST['note']);
+                    }
+                }
             }
         }
         

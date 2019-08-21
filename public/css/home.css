@@ -149,38 +149,6 @@
     font-size: 1em;
 }
 
-.commentaires strong {
-    color: var(--colorbordeau);
-}
-
-#machine {
-    /*    font-family: 'Charmonman', cursive; */
-    font-family: 'Dancing Script', cursive;
-}
-
-/*création de la zone d'animation*/
-@-webkit-keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-/*mise en place de l'animation*/
-.machinebox {
-    font-size: 150%;
-    white-space: nowrap;
-    overflow: hidden;
-    color: white;
-    padding-right: 2em;
-    padding-left: 2em;
-    -webkit-animation: typing 5s steps(38, end);
-    /*steps nombre de caract*/
-}
-
 .photo {
     display: flex;
     border: solid 5px var(--colorbordeau);
@@ -210,6 +178,7 @@
     width: 21%;
     float: left;
     margin: 0;
+    height: 392px;
 }
 
 @keyframes slidy {

@@ -25,7 +25,7 @@ ob_start();
                 <br> Coffret cadeaux, paniers garnis, coffrets vins, nous vous proposons égelement un grand choix de verres et carafes pour faire plaisir ou se faire plaisir.
                 <br> Nous pouvons également vous conseiller et vous fournir pour vos mariages, baptêmes, ...
             </p>
-            <p><i class="fas fa-wine-bottle"></i> <a href="index.php?action=actus"> Tout savoir sur les actus de la cave
+            <p><a href="index.php?action=actus"><i class="fas fa-wine-bottle"> Tout savoir sur les actus de la cave</i>
                 </a></p><br><br>
             <img src="public/images/divers/alcohol-bottles-alcoholic-beverage-bar-2664149.jpg">
         </div>
@@ -34,7 +34,7 @@ ob_start();
 
             <h2> Le bar </h2>
             <p> Envie d'un moment entre amis autour d'un verre? <br>Le bar à l'étage et la terrasse extérieure vous accueille pour un moment de détente. L'occasion pour vous de goûter les différents produits disponibles dans le magasin, sur les conseils de Florent. <br>Découvrez toute la richesse du patrimoine viticole français, des différentes bières de nos régions accompagnés d'une planche de charcuterie pour les plus gourmands.<br>Jeux de société, concerts... Plusieurs activités  vous sont proposées tout au long de l'année. </p>
-            <p><i class="fas fa-glass-cheers"></i> <a href="index.php?action=actus"> Tout savoir sur les actus du bar
+            <p><a href="index.php?action=actus"><i class="fas fa-glass-cheers">Tout savoir sur les actus du bar</i>
            </a></p><br><br>
             <img src="public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg">
         </div>
@@ -72,57 +72,40 @@ ob_start();
     <article id="comments">
 
         <div id="affichagecomments">
-            <h2>Ils en parlent mieux que nous </h2>
-            <br><br>
-            <div class="com">Jean michel (12/12/2012):
-                <br>
-                <span>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
-            <div class="article">
-                <div id="machine" class="machinebox">Très bon moment, très belle boutique... </div>
-            </div>
-            <br>
-            <div class="com">Jean michel (12/12/2012):
-                <br>
-                <span>&#9733;&#9733;&#9733;&#9733;</span></div>
-            <div class="article">
-                <div id="machine" class="machinebox">Très beau cadre, magnifique moment<br> mais mauvais temps </div>
-            </div>
-            <div class="article">
-                <br>
-                <div class="com">Jean michel (12/12/2012):
-                    <br>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
-                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
-            </div>
-            <div class="article">
-                <br>
-                <div class="com">Jean michel (12/12/2012):
-                    <br>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
-                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
-            </div>
-            <div class="article">
-                <br>
-                <div class="com">Jean michel (12/12/2012):
-                    <br>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
-                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
-            </div>
-            <div class="article">
-                <br>
-                <div class="com">Jean michel (12/12/2012):
-                    <br>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
-                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
-            </div>
-            <div class="article">
-                <br>
-                <div class="com">Jean michel (12/12/2012):
-                    <br>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
-                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
+            <div class="commentaires">
+                <h2>Ils en parlent mieux que nous </h2>
+                <br><br>
+                <?php
+                while($com = $coms->fetch()){
+
+                    echo    '<div class="com"><span class="white">' . htmlspecialchars($com['pseudo']) . " :" . $com['date_fr'] . 
+                        '</span><br>
+                            <span><strong>';
+                                if(isset($com['note'])){
+                                    if($com['note'] == 1){
+                                        echo "&#9733;";}
+                                    if($com['note'] == 2){
+                                        echo "&#9733;&#9733";}
+                                    if($com['note'] == 3){
+                                        echo "&#9733;&#9733;&#9733";}
+                                    if($com['note'] == 4){
+                                        echo "&#9733;&#9733;&#9733;&#9733";}
+                                    if($com['note'] == 5){
+                                        echo "&#9733;&#9733;&#9733;&#9733;&#9733;";}
+                                }    
+
+                    echo    '</strong></span>
+                            </div>
+                    <div class="article">
+                        <div id="machine" class="machinebox">' . htmlspecialchars($com['text']) . '</div>
+                    </div><br>';
+                }
+                ?>
+                <p><a href="index.php?action=comments" class="button">En voir plus</a></p>
             </div>
         </div>
+            <br>
+            
 
         <p id="espaceComments"></p>
 
@@ -130,7 +113,7 @@ ob_start();
         <div id="insertionComments">
             <h2> Donnez votre avis !</h2>
             <br><br>
-            <form action="" method="post">
+            <form action="index.php?action=cavebar" method="post">
                 <div>
                     <label for="pseudo">Pseudo</label><br />
                     <input type="text" id="pseudo" name="pseudo" />
@@ -150,9 +133,10 @@ ob_start();
                     <label for="text">Commentaire</label><br />
                     <textarea id="text" name="text" rows="10" cols="50"></textarea>
                 </div>
+                <input type="text" name="valid" value="Envoyer" hidden>
                 <br>
                 <div>
-                    <input type="submit" />
+                    <input type="submit" class="button" value="Envoyer"/>
                 </div>
             </form>
 

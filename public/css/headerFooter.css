@@ -7,12 +7,53 @@
     --colorbordeau: rgb(87, 6, 21);
 }
 
+/*Machine a writter and comments*/
+#machine {
+    font-family: 'Dancing Script', cursive;
+}
+
+/*création de la zone d'animation*/
+@-webkit-keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/*mise en place de l'animation*/
+.machinebox {
+    font-size: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    padding-right: 2em;
+    padding-left: 2em;
+    -webkit-animation: typing 5s steps(38, end);
+    /*steps nombre de caract*/
+}
+
+.commentaires strong {
+    color: var(--colorbordeau);
+    text-shadow: 1px 1px 2px white;
+}
+.commentaires #machine::first-letter {
+    color: var(--colorbordeau);
+    text-shadow: 1px 1px 2px white;
+    font-size: 2em;
+    font-weight: bolder;
+}
+/* end writter and comments */
+
+/*log clic wrapper*/
 #hamburger {
     display: none
 }
 
 /* Décoration */
-.separateur{
+.separateur {
     font-size: 3em;
     color: var(--colorbordeau);
     text-align: center;
@@ -24,18 +65,21 @@ header {
     position: fixed;
     z-index: 9998;
     width: 100%;
-    
+
     background-color: rgb(45, 45, 45);
     border-bottom: solid white;
-    
+
     display: inline-flex;
     justify-content: space-around;
     align-items: center
-
 }
 
-header h1{
-    font-size: 1.5em;
+header #logotitle img {
+    width: 450px
+}
+
+header h1 {
+    font-size: 1.3em;
     font-family: 'Dancing Script', cursive;
     color: white;
     margin-top: -1em;
@@ -52,7 +96,7 @@ nav li a {
     text-decoration: none;
     font-weight: bolder;
     background-color: white;
-    color:  var(--colorbordeau);
+    color: var(--colorbordeau);
     margin-right: 0.1em;
     padding: 0.1em 1em 0.1em 1em;
     box-shadow: 2px 3px 5px var(--colorbordeau);
@@ -62,13 +106,13 @@ nav li a {
 
 nav li a:hover {
     font-size: 1.8em;
-    background-color:  var(--colorbordeau);
+    background-color: var(--colorbordeau);
     color: white;
 }
 
 #bigbutton {
     border: solid white 0.1em;
-    background-color:  var(--colorbordeau);
+    background-color: var(--colorbordeau);
     color: white;
     padding: 0.5em;
     border-radius: 0.4em;
@@ -77,18 +121,17 @@ nav li a:hover {
 #bigbutton:hover {
     font-size: 1.8em;
     background-color: white;
-    color:  var(--colorbordeau);
-    border-color:  var(--colorbordeau);
+    color: var(--colorbordeau);
+    border-color: var(--colorbordeau);
 }
 
-.flag:hover{
+.flag:hover {
     transform: scale(1.3);
 }
 
 /*setting commun a page*/
-section
-{
-    margin-top: 8em;
+section {
+    margin-top: 12em;
 }
 
 body {
@@ -99,25 +142,26 @@ body {
     background-image: url('../images/divers/parquet.jpg');
     margin: 0;
 }
-h1{
-    font-size: 2em    
+
+h1 {
+    font-size: 2em
 }
 
-h2{
+h2 {
     font-family: 'Dancing Script', cursive;
     color: white;
-    font-size: 5em;
-    
+    font-size: 3em;
+
     display: inline-block;
-    border-bottom: 5px  var(--colorbordeau) solid;
+    border-bottom: 5px var(--colorbordeau) solid;
     border-bottom-right-radius: 15px;
-    
+
     font-style: italic;
-    font-weight: lighter; 
+    font-weight: lighter;
 }
 
-a{
-  font-family: 'Roboto Mono', monospace;
+a {
+    font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -125,7 +169,7 @@ p {
     text-align: center;
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 /* start footer */
@@ -142,68 +186,78 @@ p {
     text-decoration: none;
     color: white;
 }
-footer a:hover{
+
+footer a:hover {
     font-size: 1em;
-    color:  var(--colorbordeau);
+    color: var(--colorbordeau);
     text-shadow: 2px 3px 2px white;
     transform: scale(1.3)
 }
 
 .tiret {
-    border-left:solid 0.2em var(--colorbordeau);
+    border-left: solid 0.2em var(--colorbordeau);
 }
 
-footer #logo a{
+footer #logo a {
     font-size: 2em;
     color: white;
 }
 
-footer #logo a:hover{
-    color:  var(--colorbordeau);
+footer #logo a:hover {
+    color: var(--colorbordeau);
     text-shadow: 2px 3px 2px white;
     transform: scale(1.2);
 }
 
 
-@media screen and (max-width: 1500px){
-    header #logotitle img{
+@media screen and (max-width: 1500px) {
+    header #logotitle img {
         width: 350px
-    }    
-      
-    h2{
+    }
+
+    section {
+        margin-top: 8em;
+    }
+
+    h2 {
         font-size: 2.5em;
     }
-    
-    p{
-    font-size :1em;
+
+    p {
+        font-size: 0.7em;
     }
-    
+
 }
 
 
-@media screen and (max-width: 1300px){
-    header #logotitle img{
+@media screen and (max-width: 1300px) {
+    header #logotitle img {
         width: 250px
-    } 
-    h2{
+    }
+
+    h2 {
         font-size: 3em;
     }
-    
+
+    nav li a {
+        font-size: 1.5em
+    }
+
 }
 
 
 
 /*version tablette */
-@media screen and (max-width: 1024px){
-    
-    header #logotitle img{
+@media screen and (max-width: 1024px) {
+
+    header #logotitle img {
         width: 300px
     }
-    
-    header h1{
+
+    header h1 {
         font-size: 1.5em;
     }
-    
+
     /*Menu Wrap*/
     #hamburger {
         text-decoration: none;
@@ -218,7 +272,8 @@ footer #logo a:hover{
     #hamburger i {
         font-size: 40px;
         margin-top: 0.5em;
-        color: var(--colorbordeau); !important;
+        color: var(--colorbordeau);
+         !important;
     }
 
     a#wrapper:target ~ #wrapper {
@@ -261,7 +316,7 @@ footer #logo a:hover{
 
 
 
-    header nav ul{
+    header nav ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -269,41 +324,42 @@ footer #logo a:hover{
         margin-left: -20px;
     }
 
-    header nav li a{
+    header nav li a {
         border: solid 3px
     }
-    
+
     h2 {
-        font-size : 2em;
+        font-size: 2em;
     }
-    p{
-        font-size : 0.8em;
+
+    p {
+        font-size: 0.7em;
     }
-    
-    section{
-        margin-top : 5em;
+
+    section {
+        margin-top: 5em;
     }
-    
-    a{
+
+    a {
         font-size: 0.8em;
     }
 }
 
 /*version phone */
-@media screen and (max-width: 720px){
-    
-    
-    header #logotitle img{
+@media screen and (max-width: 850px) {
+
+
+    header #logotitle img {
         width: 150px;
         margin-left: 2em;
     }
-    
-    header h1{
+
+    header h1 {
         font-size: 0.5em;
         margin-left: 5em;
     }
-    
-    
+
+
     /*Menu Wrap*/
     #hamburger {
         text-decoration: none;
@@ -318,7 +374,8 @@ footer #logo a:hover{
     #hamburger i {
         font-size: 40px;
         margin-top: 0.5em;
-        color: var(--colorbordeau); !important;
+        color: var(--colorbordeau);
+         !important;
     }
 
     a#wrapper:target ~ #wrapper {
@@ -358,8 +415,8 @@ footer #logo a:hover{
         background-color: rgba(0, 0, 0, 0);
         z-index: 199;
     }
-    
-    header nav ul{
+
+    header nav ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -368,33 +425,35 @@ footer #logo a:hover{
         margin-left: -20px
     }
 
-    header nav li a{
+    header nav li a {
         border: solid 3px
     }
-    
-    footer{
+
+    footer {
         font-size: 0.5em;
     }
-    
-    footer .valider{
+
+    footer .valider {
         margin-top: 10px;
     }
-    
-    header #lang img{
-        width : 30%;
+
+    header #lang img {
+        width: 30%;
     }
-    section{
-    margin-top:1em;
+
+    section {
+        margin-top: 1em;
     }
-    
+
     h2 {
-        font-size : 1.5em;
+        font-size: 1.5em;
     }
-    
-    p{
-        font-size : 0.8em;
+
+    p {
+        font-size: 0.5em;
     }
-    a{
+
+    a {
         font-size: 0.8em;
     }
 }

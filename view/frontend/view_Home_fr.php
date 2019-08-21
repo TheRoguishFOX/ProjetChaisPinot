@@ -48,26 +48,32 @@ ob_start();
 
     <div class="troisiemebloc">
         <article class="commentaires">
-            <div class="com">Jean michel (12/12/2012):
-                <br>
-                <strong>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</strong></div>
+            <?php
+        while($com = $coms->fetch()){
+
+            echo    '<div class="com">' . htmlspecialchars($com['pseudo']). ':' . $com['date_fr'] . 
+                '<br>
+                    <span><strong>';
+                        if(isset($com['note'])){
+                            if($com['note'] == 1){
+                                echo "&#9733;";}
+                            if($com['note'] == 2){
+                                echo "&#9733;&#9733";}
+                            if($com['note'] == 3){
+                                echo "&#9733;&#9733;&#9733";}
+                            if($com['note'] == 4){
+                                echo "&#9733;&#9733;&#9733;&#9733";}
+                            if($com['note'] == 5){
+                                echo "&#9733;&#9733;&#9733;&#9733;&#9733;";}
+                        }    
+                           
+            echo    '</strong></span>
+                    </div>
             <div class="article">
-                <div id="machine" class="machinebox">Très bon moment, très belle boutique... </div>
-            </div>
-            <br>
-            <div class="com">Jean michel (12/12/2012):
-                <br>
-                <strong>&#9733;&#9733;&#9733;&#9733;</strong></div>
-            <div class="article">
-                <div id="machine" class="machinebox">Très beau cadre, magnifique moment<br> mais mauvais temps </div>
-            </div>
-            <div class="article">
-                <br>
-                <div class="com">Jean michel (12/12/2012):
-                    <br>
-                    <strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong></div>
-                <div id="machine" class="machinebox">très belle boutique... bon produit... </div>
-            </div>
+                <div id="machine" class="machinebox">' . htmlspecialchars($com['text']) . '</div>
+            </div><br>';
+        }
+    ?>
 
 
         </article>

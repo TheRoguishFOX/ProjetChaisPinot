@@ -8,16 +8,16 @@ section p{
     margin : 1em;
 }
 
-article{
+section article{
     display:flex;
     margin : 0.5em;
     box-shadow: 1px 1px 2px;
-    background-size : content;
     height : 12em;
 }
 
 section div{
-    width : 50%;  
+    width : 50%;
+    background-size : cover;
 }
 
 .texte {
