@@ -8,12 +8,58 @@ $title_page = "Les actus";
 ob_start();
 ?>
 <section>
-     
-    <div id="foireauxvins">
-       
-        <h2> Foire aux vins</h2>
-    </div>
+    <article id="baractus">
+        <div id="afterwork">
+            <h2> After work &amp; Before Lunch</h2>
+        </div>
 
+        <div id="texteafterwork">
+            <p>Concerts, jeux de société...</p>
+        </div>
+
+    </article>
+
+    <article id="degust">
+
+        <div id="textedegustation">
+            <p>Dégustations privées, dégustations publiques</p>
+        </div>
+        <div id="degustation">
+            <h2> Soirée oenologie <br> et dégustations</h2>
+        </div>
+    </article>
+
+    <article id="foire">
+        <div id="foireauxvins">
+            <h2> Foire aux vins</h2>
+        </div>
+        <div id="textefoire">
+            <p>Florent vous sélectionne une gamme de vins avec des prix défiant toute concurrence ! </p>
+        </div>
+    </article>
+
+
+
+    <article id="fete">
+        
+
+        <div id="textefete">
+            <p>Pensez à gâter vos proches avec nos coffrets et chèques cadeaux ainsi que nos offres spéciales fêtes ! <br><br> Fête des pères, Noël, anniversaires... nous serons vous conseillez pour faire de ces cadeaux des moments de fêtes inoubliables! </p>
+        </div>
+        <div id="fetedivers">
+            <h2> Spécial fêtes</h2>
+        </div>
+    </article>
+
+    <article id="mariages">
+        <div id="mariagedivers">
+            <h2> Fournisseur de bonheur </h2>
+        </div>
+        <div id="textemariage">
+            <p>Nous pouvons vous fournir pour tous les moments importants de votre vie ! <br> Mariages, baptêmes, anniversaire.. Pensez au meilleur, nous nous occupons du reste! Nous sélectionnerons avec vous lors d'une dégustation, toutes les boissons dont vous réviez.<br> Nous louons également des pompes à bières </p>
+        </div>
+
+    </article>
 
 
 
