@@ -1,137 +1,68 @@
-#baractus{
+section h2{
+    margin-left : 1em;
+    color : black;
+}
+
+section p{
+    color : black;
+    margin : 1em;
+}
+
+article{
     display:flex;
     margin : 0.5em;
     box-shadow: 1px 1px 2px;
+    background-size : content;
+    height : 12em;
 }
+
+section div{
+    width : 50%;  
+}
+
+.texte {
+    background-color: rgba(255, 255,255, 0.4);
+    display : flex;
+    align-items: center;
+}
+
 
 #afterwork{
     background-image: url(../images/divers/band_foirevin.jpg);
-    width: 50%;
-    height: 15em;
 }
 
-#afterwork h2{
-    margin-left : 1em;
-    color : black;
-}
-
-#texteafterwork{
-background-color: rgba(255, 255,255, 0.4);
-width: 50%;
-}
-
-#texteafterwork p{
-    color : black;
-    margin : 1em;
-}
-
-#foire{
-    display:flex;
-    margin : 0.5em;
-    box-shadow: 1px 1px 2px;
-}
 
 #foireauxvins{
     background-image: url(../images/divers/band_foirevin.jpg);
-    width: 50%;
-    height: 15em;
 }
 
-#foireauxvins h2{
-    margin-left : 1em;
-    color : black;
-}
-
-#textefoire{
-background-color: rgba(255, 255,255, 0.4);
-width: 50%;
-}
-
-#textefoire p{
-    color : black;
-    margin : 1em;
-}
-
-#degust{
-    display:flex;
-    margin : 0.5em;
-    box-shadow: 1px 1px 2px
-}
 
 #degustation{
     background-image: url(../images/divers/band_degust.jpg);
-    width: 50%;
-    height: 15em;
 }
+
 
 #degustation h2{
-    margin-left : 1em;
     color : white;
-}
-
-#textedegustation{
-background-color: rgba(255, 255,255, 0.4);
-width: 50%;
-}
-
-#textedegustation p{
-    color : black;
-    margin : 2em;
-}
-
-#fete{
-    display:flex;
-    margin : 0.5em;
-    box-shadow: 1px 1px 2px
 }
 
 #fetedivers{
     background-image: url(../images/divers/band_fete.jpg);
-    width: 50%;
-    height: 15em;
 }
 
 #fetedivers h2{
-    margin-left : 1em;
     color : white;
 }
 
-#textefete{
-background-color: rgba(255, 255,255, 0.4);
-width: 50%;
-}
-
-#textefete p{
-    color : black;
-    margin : 2em;
-}
-
-#mariages{
-    display:flex;
-    margin : 0.5em;
-    box-shadow: 1px 1px 2px
-}
 
 #mariagedivers{
     background-image: url(../images/divers/band_mariage.jpg);
-    width: 50%;
-    height: 15em;
 }
 
 #mariagedivers h2{
-    margin-left : 1em;
     color : white;
 }
 
-#textemariage{
-background-color: rgba(255, 255,255, 0.4);
-width: 50%;
-}
-
-#textemariage p{
-    color : black;
-    margin : 2em;
-}
 
 
 
