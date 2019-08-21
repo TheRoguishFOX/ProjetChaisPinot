@@ -1,0 +1,92 @@
+/* CSS du menu horizontal, bieler batiste */
+
+.menu{
+    position:absolute;
+    display:block;
+    margin:0;
+    padding:0;
+    width:930px;
+	z-index:100;
+    }
+
+.menu ul{
+    position:absolute;
+    display:block;
+    width:150px;
+    /*margin:0;*/
+    padding:0;
+	 background-color: #95434B;
+    }
+	
+.menu li ul{
+    visibility:hidden;
+    }
+
+.menu li li ul{
+    position:absolute;    
+    margin-top:-20px;
+	margin-left:152px;
+	background-color: #95434B;	
+    }
+    
+.menu li{
+    list-style:none;
+    width:auto;
+    height:auto;
+    display:inline;
+    display/**/:block;
+    float:none;
+    float/**/:left;
+    margin:0;   
+	 margin-right:4px;
+	line-height:20px;
+	
+    }
+    
+.menu li li{
+    display:block;
+    float:none;
+	 width:140px;
+	 background-color: #95434B;
+	  margin:0;
+     padding:0;   
+	border-bottom: 1px solid #B56D74;
+	
+    }
+    
+/* correct a little IE bug */
+* html .menu li li{
+    display:inline;
+    }
+
+.menu a{
+    text-align:left;
+     width:auto;
+    color:#FFFFFF;
+    display:block;  
+    text-decoration:none;  
+    font-family:arial;
+	font-size:11px;
+	background-image: none;
+    margin:0px;
+	padding:0;
+    padding-left:10px;
+	background-image: url('curs.gif');
+     background-repeat: no-repeat;
+     background-position: left;
+    }
+    
+.menu a:hover{
+    font-family:arial;
+	font-size:11px;
+	
+    }
+    
+/* for a mozilla better display with key nav */
+.menu a:focus{
+   
+}
+
+a.linkOver{
+    width:auto;
+    }
