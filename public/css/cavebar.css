@@ -1,36 +1,7 @@
-#histoireboutique {
-    display : flex;
-    align-items: center;
-}
-
-
-#histoireboutique img{
-    width: 20em;
-    margin : 2em;
-    box-shadow: 2px 2px 3px;
-}
-
-
-#histoireboutique p{
-    text-align: left;
-    margin-right: 1em;
-    margin-left: 1em;
-}
-
 #caveproduits{
     display:flex;
     text-align: center;
 }
-
-#caveproduits img{
-    width : 15em;
-    padding : 0.5em;
-    box-shadow: 2px 2px 3px;
-    margin-bottom: 1em;
-}
-
-
-
 
 #lebar{
     background-color: rgba(255, 255, 255, 0.4);

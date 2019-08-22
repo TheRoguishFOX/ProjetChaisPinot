@@ -8,15 +8,6 @@ $title_page = "La cave et le bar";
 ob_start();
 ?>
 <section id="caveetbar">
-    <article id="histoireboutique">
-        <img src="public/images/divers/77220FC6-33EA-4ED3-A108-5EE0349E54FA.jpeg">
-        <div id="pourlapetitehistoire">
-            <h2> Pour la petite histoire </h2><br>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, temporibus, nobis laborum architecto necessitatibus expedita. Esse doloremque minus molestiae, itaque quasi ducimus tenetur maiores eligendi repellat, modi, impedit hic. Atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quo, dolor dignissimos doloribus hic aperiam voluptatem explicabo nobis, autem nesciunt, culpa.
-                Consequuntur id modi incidunt veniam sint. Praesentium, aperiam quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti similique tempora cumque fugiat quam. Fugiat, non, eius. Doloribus itaque repudiandae placeat dolorum ratione expedita totam facilis, magni voluptas debitis labore.</p>
-        </div>
-    </article>
-    <br><br>
     <article id="caveproduits">
         <div id="lacave">
 
@@ -27,7 +18,6 @@ ob_start();
             </p>
             <p><a href="index.php?action=actus"><i class="fas fa-wine-bottle"> Tout savoir sur les actus de la cave</i>
                 </a></p><br><br>
-            <img src="public/images/divers/alcohol-bottles-alcoholic-beverage-bar-2664149.jpg">
         </div>
 
         <div id="lebar">
@@ -36,7 +26,6 @@ ob_start();
             <p> Envie d'un moment entre amis autour d'un verre? <br>Le bar à l'étage et la terrasse extérieure vous accueille pour un moment de détente. L'occasion pour vous de goûter les différents produits disponibles dans le magasin, sur les conseils de Florent. <br>Découvrez toute la richesse du patrimoine viticole français, des différentes bières de nos régions accompagnés d'une planche de charcuterie pour les plus gourmands.<br>Jeux de société, concerts... Plusieurs activités  vous sont proposées tout au long de l'année. </p>
             <p><a href="index.php?action=actus"><i class="fas fa-glass-cheers">Tout savoir sur les actus du bar</i>
            </a></p><br><br>
-            <img src="public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg">
         </div>
     </article>
     <br><br>

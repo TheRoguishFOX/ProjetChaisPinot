@@ -10,20 +10,19 @@ ob_start();
         <img src="./public/images/divers/alcohol-bottles-9.jpg">
     </article>
     <br><br><br>
+
     <article id="quisommesnous">
-
-
         <div class="quisommesnous">
             <a href="#"><img src="./public/images/logo/logo_Chais_Pinot_vitrine_blanc.png"></a>
             <div class="text">
-         <h2> Une cave, un bar</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam minima nam illo non commodi fugiat rerum mollitia numquam, dolorem modi doloribus aperiam quam corporis at voluptas, reprehenderit, ducimus sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id maiores totam aliquam rerum accusantium repellat atque iste minus dolorem, dolores molestiae obcaecati voluptas, quidem at assumenda omnis libero error hic.</p>
+                <h2>Pour la petite histoire</h2>
+                <p><em> "J'ai créé cet endroit convivial en 2017 dans ma ville natale, pour partager mes connaissances et ma pasion du vin"</em> <br>Florent </p>
             </div>
         </div>
     </article>
 
     <div class="separateur">
-    <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i>~<i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i></div>
+        <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i>~<i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i></div>
 
     <article class="deuxiemebloc">
         <div class="clickandcollect">
