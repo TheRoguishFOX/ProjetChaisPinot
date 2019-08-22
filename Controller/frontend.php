@@ -20,6 +20,16 @@
         $news_coms = new Comments;
         $_data = $news_coms->postComments($pseudo, $text, $note);   
     }
+    function comments(){
+        $list_com = new Comments;
+        $coms = $list_com->listAllComments();
+        require('./view/frontend/view_comments_fr.php');
+    }
+    function triComments($note){
+        $tri_com = new Comments;
+        $coms = $tri_com->triComment($note);
+        require('./view/frontend/view_comments_fr.php');
+    }
 
     function actus(){
         require('./view/frontend/view_actus_fr.php');

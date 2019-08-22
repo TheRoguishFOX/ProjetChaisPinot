@@ -9,6 +9,15 @@ try{
         
         if(isset($_GET['action'])){
             
+            if($_GET['action'] == 'comments'){
+                if(isset($_GET['note'])){
+                    if($_GET['note']){
+                        triComments($_GET['note']);
+                    }
+                }
+                else comments();
+            }
+            
             if($_GET['action']=='cavebar'){
                 cavebar();
                 if(isset($_POST['valid'])){

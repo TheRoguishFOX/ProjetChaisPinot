@@ -1,0 +1,68 @@
+.commentaires{
+    margin: auto;
+    padding: 2em;
+}
+
+a{
+    color:white;
+    font-size: 1
+}
+
+a:hover{
+   color: var(--colorbordeau); 
+}
+
+.bloc{
+    background-color: rgba(45,45,45,0.5);
+    padding: 0.8em;
+    font-size: 1.3em;
+    font-size: 1.5em;
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+strong{
+    font-size: 1.5em;
+}
+
+.com{
+    
+    color: white
+}
+
+section nav ul{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 80%
+}
+
+section nav li{
+    list-style: none;
+    padding: 0.8em;
+    font-size: 1em
+}
+
+section nav .note{
+    background-color: white;
+    color: var(--colorbordeau);
+    border: solid 3px var(--colorbordeau);
+    border-radius: 15px;
+    margin-right: 0.5em
+}
+
+section nav .note:hover{
+    background-color: var(--colorbordeau);
+    color: white;
+    border: solid 3px white;
+    border-radius: 15px;
+    margin-right: 0.5em
+}
+
+section nav a{
+    text-decoration: none;
+}
+
+
+

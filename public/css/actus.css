@@ -11,6 +11,7 @@ section p{
 section article{
     display:flex;
     margin : 0.5em;
+    margin-bottom: 5em;
     box-shadow: 1px 1px 2px;
     height : 12em;
 }

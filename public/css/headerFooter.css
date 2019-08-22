@@ -84,13 +84,13 @@ header h1 {
 }
 
 
-nav ul {
+header nav ul {
 
     list-style: none;
     display: inline-flex;
 }
 
-nav li a {
+header nav li a {
     text-decoration: none;
     font-weight: bolder;
     background-color: white;
@@ -102,7 +102,7 @@ nav li a {
     font-family: 'Dancing Script', cursive;
 }
 
-nav li a:hover {
+header nav li a:hover {
     font-size: 1.8em;
     background-color: var(--colorbordeau);
     color: white;
