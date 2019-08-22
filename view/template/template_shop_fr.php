@@ -14,7 +14,7 @@
 <body>
     <header>
         <div id="logotitle">
-            <a href="index.php"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
+           <a href="index.php"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
             <h1>Click &amp; Cave</h1>
         </div>
     <a id="wrapper" class="ancre"></a>
@@ -24,7 +24,7 @@
     </a>
     <a href="#close" id="close">
     </a>
-
+    
     <div id="wrapper">
         <nav>
             <ul>

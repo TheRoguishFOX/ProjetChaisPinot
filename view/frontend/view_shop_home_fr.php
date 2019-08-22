@@ -46,12 +46,12 @@ ob_start();
     
     <div class="cardH">
         <div class="champagne">
-            <h2>Champagne</h2>
+            <h2>Pétillant</h2>
         </div>
     </div>
     <div class="cardH">
         <div class="rhum">
-            <h2>rhum</h2>
+            <h2>Spiritueux</h2>
         </div>
     </div>
 </div>
