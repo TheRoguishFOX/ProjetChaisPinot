@@ -6,50 +6,49 @@ $title_page = "Accueil";
 ob_start();
 ?>
 <section>
-   <h3> <em> "J'ai créé Le Chais Pinot en 2017 dans ma ville natale, pour partager mes connaissances et ma pasion du vin dans un endroit convivial"</em> <br>Florent  </h3>
-    <article class="video">
-        <img src="./public/images/divers/alcohol-bottles-9.jpg">
+   
+    <article>
+    <div id="video">
+
+    <h3 id="florent"> <em> "J'ai créé Le Chais Pinot en 2017 dans ma ville natale, pour partager mes connaissances et ma passion du vin dans un endroit convivial"</em> <br>Florent  </h3>
+    </div>
     </article>
-    <br><br><br>
 
-<!--
-    <article id="quisommesnous">
-        <div class="quisommesnous">
-            <a href="#"><img src="./public/images/logo/logo_Chais_Pinot_vitrine_blanc.png"></a>
-            <div class="text">
-                <h2>Pour la petite histoire</h2>
-                <p><em> "J'ai créé cet endroit convivial en 2017 dans ma ville natale, pour partager mes connaissances et ma pasion du vin"</em> <br>Florent </p>
-            </div>
-        </div>
-    </article>
--->
-
-    <div class="separateur">
-        <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i>~<i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i></div>
-
+<br><br><br><br>
     <article class="deuxiemebloc">
-        <div class="clickandcollect">
-            <div class="texte2">
-                <h2> La boutique en ligne</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corporis,<br> debitis aspernatur odit ex repellat accusantium repellendus similique maiores provident deleniti possimus at est modi consequuntur <br>blanditiis quaerat obcaecati labore.</p>
-            </div>
+       
+         <div class="clickandcollect">
+               <div id="bouteilletexte">
+                <h2> "Click &amp; Cave"</h2>
+                <p> Prenez le temps chez vous de choisir votre vin! <br>Nous vous proposons un service de boutique en ligne. Sélectionner vos produits sur le site et effectuer le retrait et le paiement au magasin.</p></div>
+                
             <div class="logobouteille"><a href="#"></a></div>
         </div>
+        
+        
+        
+        
+        
         <p class="tiret"></p>
         <div class="event">
+           <div id="eventtexte">
             <h2> Les actus</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Dolores corporis, debitis aspernatur odit ex repellat accusantium repellendus similique maiores provident deleniti <br> possimus at est modi consequuntur blanditiis quaerat obcaecati labore.</p>
-
-            <p><img src="./public/images/logo/logo_Chais_Pinot_vitrine_blanc.png"></p>
-            <button><a href="#">En savoir plus</a></button>
-        </div>
+            <p>Pour tout savoir sur l'actualité de votre cave &amp; bar, c'est ici! Dégustations, foires aux vins, concerts, soirée oenologie... il y a forcément quelque chose pour vous!  </p></div>
+ 
+            <button><a href="#"></a><br><img src="./public/images/logo/logo_Chais_Pinot_vitrine_blanc.png">
+            </button>
+       </div>
 
     </article>
 
     <div class="separateur"><i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i>~<i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i></div>
 
     <div class="troisiemebloc">
+
+       <img src="./public/images/logo/vin%20et%20verre.jpg" width="135">
+       
         <article class="commentaires">
+           
             <?php
         while($com = $coms->fetch()){
 

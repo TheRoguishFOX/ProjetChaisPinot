@@ -31,7 +31,7 @@
 
                     <li><a href="index.php?action=cavebar">La cave et le bar</a></li>
                     <li> <a href="index.php?action=actus">Actus</a></li>
-                    <li><a href="index.php?action=shop_home" id="bigbutton">La boutique en ligne</a></li>
+                    <li><a href="index.php?action=shop_home" id="bigbutton">Click &amp; Cave</a></li>
                     <li><a href="index.php?action=contact">Contact</a></li>
 
                 </ul>

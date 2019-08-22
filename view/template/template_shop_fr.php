@@ -15,7 +15,7 @@
     <header>
         <div id="logotitle">
             <a href="index.php"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
-            <h1>Click &amp; Buvette</h1>
+            <h1>Click &amp; Cave</h1>
         </div>
     <a id="wrapper" class="ancre"></a>
     <a id="close" class="ancre"></a>

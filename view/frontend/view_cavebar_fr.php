@@ -12,9 +12,9 @@ ob_start();
         <div id="lacave">
 
             <h2> La cave </h2>
-            <p> Nous vous proposons un grand choix de vins, bières, champagnes et spiritueux. Du petit prix au grand cru classé, Florent sera vous conseiller pour faire le meilleur choix en fonction de vos envies et de votre budget.
-                <br> Coffret cadeaux, paniers garnis, coffrets vins, nous vous proposons égelement un grand choix de verres et carafes pour faire plaisir ou se faire plaisir.
-                <br> Nous pouvons également vous conseiller et vous fournir pour vos mariages, baptêmes, ...
+            <p> Nous vous proposons un grand choix de vins, bières, champagnes, pétillants et spiritueux. Du petit prix au grand cru classé, Florent sera vous conseiller pour faire le meilleur choix en fonction de vos envies et de votre budget.
+            <br> Coffret cadeaux, paniers garnis, coffrets vins, nous vous proposons également un grand choix de verres et carafes pour faire plaisir ou se faire plaisir.
+            <br> Nous pouvons vous conseiller et vous fournir pour vos mariages, baptêmes, ... pour faire de ces festivités des moments inoubliables.
             </p>
             <p><a href="index.php?action=actus"><i class="fas fa-wine-bottle"> Tout savoir sur les actus de la cave</i>
                 </a></p><br><br>
@@ -23,9 +23,9 @@ ob_start();
         <div id="lebar">
 
             <h2> Le bar </h2>
-            <p> Envie d'un moment entre amis autour d'un verre? <br>Le bar à l'étage et la terrasse extérieure vous accueille pour un moment de détente. L'occasion pour vous de goûter les différents produits disponibles dans le magasin, sur les conseils de Florent. <br>Découvrez toute la richesse du patrimoine viticole français, des différentes bières de nos régions accompagnés d'une planche de charcuterie pour les plus gourmands.<br>Jeux de société, concerts... Plusieurs activités  vous sont proposées tout au long de l'année. </p>
+            <p> Envie d'un moment entre amis autour d'un verre? <br>Le bar à l'étage et la terrasse extérieure vous accueille pour un moment de détente. L'occasion pour vous de goûter les différents produits disponibles dans le magasin, sur les conseils de Florent. Découvrez toute la richesse du patrimoine viticole français, des différentes bières de nos régions accompagnés d'une planche de charcuterie pour les plus gourmands. Jeux de société, concerts... Plusieurs activités vous sont proposées tout au long de l'année. </p>
             <p><a href="index.php?action=actus"><i class="fas fa-glass-cheers">Tout savoir sur les actus du bar</i>
-           </a></p><br><br>
+                </a></p><br><br>
         </div>
     </article>
     <br><br>
@@ -93,8 +93,8 @@ ob_start();
                 <p><a href="index.php?action=comments" class="button">En voir plus</a></p>
             </div>
         </div>
-            <br>
-            
+        <br>
+
 
         <p id="espaceComments"></p>
 
@@ -109,7 +109,7 @@ ob_start();
 
                     <label for="note">Note</label>
                     <select name="note" id="note">
-                       <option value="0"></option>
+                        <option value="0"></option>
                         <option value="1"> 1 </option>
                         <option value="2"> 2 </option>
                         <option value="3"> 3 </option>
@@ -125,7 +125,7 @@ ob_start();
                 <input type="text" name="valid" value="Envoyer" hidden>
                 <br>
                 <div>
-                    <input type="submit" class="button" value="Envoyer"/>
+                    <input type="submit" class="button" value="Envoyer" />
                 </div>
             </form>
 

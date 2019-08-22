@@ -2,34 +2,26 @@
     --colorbordeau: rgb(87, 6, 21);
 }
 
-.video img {
+/*texte florent incorporé sur l'image'*/
+#video{
+    background-image: url(../images/divers/alcohol-bottles-9.jpg);
+    background-size: cover;
     width: 100%;
-    height: auto;
+    height : 25em;
     box-shadow: 0.1em 0.2em 0.2em black;
     border-top: solid 5px var(--colorbordeau);
     border-bottom: solid 5px var(--colorbordeau);
 }
 
-.quisommesnous {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-}
-
-
-.quisommesnous img {
-    width: 10em;
-    margin: 2em;
-    margin-bottom: 3em;
-    box-shadow: 2px 3px 5px black;
-    background-color: rgba(45, 45, 45, 0.3);
-}
-
-.quisommesnous img:hover {
-    transform: scale(1.5);
-    box-shadow: 2px 3px 5px black;
+#florent{
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+    font-size : 2em;
+    color : white;
+    text-align: left;
+    margin-left: 28em;
+    margin-right: 2em;
+    border : none;
 }
 
 
@@ -41,8 +33,9 @@
 
 .clickandcollect {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     width: 40%;
     text-align: center;
     padding-left: 2em;
@@ -52,27 +45,34 @@
     border: solid 3px var(--colorbordeau);
 }
 
+.clickandcollect strong{
+    color : var(--colorbordeau);
+     font-family: 'Dancing Script', cursive;
+    font-size : 1.5em;
+}
 
 .logobouteille {
-    background-image: url(../images/logo/16.png);
+    background-image: url(../images/logo/logoclickandcave.png);
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 2em;
-    width: 150px;
+    width: 500px;
     height: 150px;
 }
 
 .logobouteille:hover {
-    background-image: url(../images/logo/logobouteilleinverse.png);
+    background-image: url(../images/logo/logoclickandcave_inverse.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 150px;
+    width: 500px;
     height: 150px;
     transform: scale(1.5);
 }
 
 
 .event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     text-align: center;
     width: 40%;
     box-shadow: -0.3em 0.5em 0.3em var(--colorbordeau);
@@ -83,19 +83,13 @@
 }
 
 .event img {
-    width: 15em;
-    border-radius: 2em;
-    border: solid;
-    border-color: white;
+    width: 10em;
 }
 
 .event button {
     background-color: var(--colorbordeau);
     border-radius: 1em;
     border: solid white;
-    padding: 0.5em;
-    margin: 2em;
-    margin-top: 1em;
     box-shadow: 0.1em 0.2em 0.2em black;
 }
 
@@ -104,34 +98,27 @@
     color:white;
 }
 
-.event a:visited {
-    color: white;
-}
-
 .event a:visited:hover {
     color: var(--colorbordeau);
 }
 
 .event button:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     border-color: white;
-    background-color: white;
+    background-color: rgb(45, 45, 45);
     color: var(--colorbordeau);
     border-color: var(--colorbordeau);
 }
-
-.event a{
-    width: 100%;
-}
-
 
 
 .troisiemebloc {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     padding: 2em;
 }
+
+
 
 .commentaires {
     background-image: url(../images/divers/black.jpg);
@@ -139,8 +126,6 @@
     border: solid 5px var(--colorbordeau);
     border-radius: 3px;
     box-shadow: 2px 3px 5px black;
-    
-
 }
 
 .com {
@@ -157,6 +142,7 @@
 
 
 /*start slide*/
+/*
 
 #slider {
     width: 80%;
@@ -173,14 +159,10 @@
     text-align: left;
     animation: 20s slidy infinite;
 }
+*/
 
-#slider figure img {
-    width: 21%;
-    float: left;
-    margin: 0;
-    height: 392px;
-}
 
+/*
 @keyframes slidy {
     10% {
         left: 0px;
@@ -215,7 +197,8 @@
     }
 }
 
-/*end slide*/
+end slide
+*/
 
 @media screen and (max-width: 480px){
     

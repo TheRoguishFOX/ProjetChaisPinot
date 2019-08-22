@@ -14,14 +14,15 @@ ob_start();
         </div>
 
         <div class="texte">
-            <p>Concerts, jeux de société...</p>
+            <p>Pour partager un bon moment entre amis ou décompresser après une journée de travail, venez partager notre amour du bon vin et de la bonne bière dans un cadre chaleureux et convivial! <br>Concerts, jeux de société, retrouvez toute<br> <strong>l'actualité de Chais Pinot sur <a href="https://fr-fr.facebook.com/pages/category/Pub/Chais-Pinot-118435125527277/">son facebook</a></strong></p>
         </div>
     </article>
 
     <article id="degust">
 
         <div class="texte">
-            <p>Dégustations privées, dégustations publiques</p>
+            <p>Envie de connaître de nouvelles saveurs? <br><br> <br>  Dégustations privées sur réservation ou dégustations publiques, Florent vous fera découvrir ou redévouvrir toutes les finesses du vin.<br><strong>
+            Toutes les informations sur <a href="https://fr-fr.facebook.com/pages/category/Pub/Chais-Pinot-118435125527277/">le facebook</a> du Chais Pinot ou au 06 32 20 82 72.</strong></p>
         </div>
         <div id="degustation">
             <h2> Soirée oenologie <br> et dégustations</h2>
@@ -33,7 +34,7 @@ ob_start();
             <h2> Foire aux vins</h2>
         </div>
         <div class="texte">
-            <p>Florent vous sélectionne une gamme de vins avec des prix défiant toute concurrence ! </p>
+            <p>Florent vous sélectionne une gamme de vins avec des prix défiant toute concurrence!<br><br><br> Pour découvrir de nouvelles saveurs et compléter votre cave, n'hésitez pas à venir faire un tour à la cave! </p>
         </div>
     </article>
 
@@ -55,7 +56,7 @@ ob_start();
             <h2> Fournisseur de bonheur </h2>
         </div>
         <div class="texte">
-            <p>Nous pouvons vous fournir pour tous les moments importants de votre vie ! <br><br><br> Mariages, baptêmes, anniversaire.. Pensez au meilleur, nous nous occupons du reste! Nous sélectionnerons avec vous lors d'une dégustation, toutes les boissons dont vous réviez.<br> Nous louons également des pompes à bières </p>
+            <p>Nous pouvons vous fournir pour tous les moments importants de votre vie ! <br><br><br> Mariages, baptêmes, anniversaire.. Pensez au meilleur, nous nous occupons du reste! Nous sélectionnerons avec vous lors d'une dégustation, toutes les boissons dont vous réviez.<br> Nous louons également des pompes à bières pour tous vos évènements festifs. </p>
         </div>
 
     </article>

@@ -7,13 +7,14 @@
     background-color: rgba(255, 255, 255, 0.4);
     color : black;
     margin:1em;
+    width: 48%;
 }
 
 #lacave {
     background-color: rgba(255, 255, 255, 0.4);
     color : black;
     margin:1em;
-
+    width: 48%;
 }
 
 
@@ -121,7 +122,8 @@ textarea[name=text]{
 }
 
 @media screen and (max-width: 1024px){
-    
+ 
+/*gestion de la taille de la zone message*/
     textarea[name=text]{
      resize : none;
      min-width : 100px;

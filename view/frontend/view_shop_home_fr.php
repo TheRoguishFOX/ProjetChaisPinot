@@ -1,6 +1,6 @@
 <?php
 $css = '<link rel="stylesheet" type="text/css" href="./public/css/shop.css">';
-    $title = "Boutique: Click &amp; Buvette";
+    $title_page = "Boutique: Click &amp; Cave";
 
 ob_start();
 ?>

@@ -31,6 +31,10 @@ section div{
     background-image: url(../images/divers/band_afterwork.jpg);
 }
 
+#afterwork h2{
+    color : white;
+}
+
 
 #foireauxvins{
     background-image: url(../images/divers/band_foirevin.jpg);

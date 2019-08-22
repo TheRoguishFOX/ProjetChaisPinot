@@ -54,7 +54,7 @@
 
 /* Décoration */
 .separateur {
-    font-size: 3em;
+    font-size: 2em;
     color: var(--colorbordeau);
     text-align: center;
     margin: 2em;
@@ -65,10 +65,8 @@ header {
     position: fixed;
     z-index: 9998;
     width: 100%;
-
     background-color: rgb(45, 45, 45);
     border-bottom: solid white;
-
     display: inline-flex;
     justify-content: space-around;
     align-items: center
@@ -224,7 +222,7 @@ footer #logo a:hover {
     }
 
     p {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
 }
