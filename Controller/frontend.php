@@ -1,6 +1,5 @@
 <?php
 
-    require_once ('./model-manager/frontend.php');
     require_once('./model-manager/newsletterManager.php');
     require_once('./model-manager/commentManager.php');
 
