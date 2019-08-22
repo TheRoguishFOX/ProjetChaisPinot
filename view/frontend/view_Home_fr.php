@@ -6,11 +6,13 @@ $title_page = "Accueil";
 ob_start();
 ?>
 <section>
+   <h3> <em> "J'ai créé Le Chais Pinot en 2017 dans ma ville natale, pour partager mes connaissances et ma pasion du vin dans un endroit convivial"</em> <br>Florent  </h3>
     <article class="video">
         <img src="./public/images/divers/alcohol-bottles-9.jpg">
     </article>
     <br><br><br>
 
+<!--
     <article id="quisommesnous">
         <div class="quisommesnous">
             <a href="#"><img src="./public/images/logo/logo_Chais_Pinot_vitrine_blanc.png"></a>
@@ -20,6 +22,7 @@ ob_start();
             </div>
         </div>
     </article>
+-->
 
     <div class="separateur">
         <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i> ~ <i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i>~<i class="fas fa-wine-bottle"><i class="fas fa-wine-glass-alt"></i></i></div>
@@ -37,7 +40,7 @@ ob_start();
             <h2> Les actus</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Dolores corporis, debitis aspernatur odit ex repellat accusantium repellendus similique maiores provident deleniti <br> possimus at est modi consequuntur blanditiis quaerat obcaecati labore.</p>
 
-            <p><img src="public/images/divers/alcoholic-beverage-bar-beer-1269025.jpg"></p>
+            <p><img src="./public/images/logo/logo_Chais_Pinot_vitrine_blanc.png"></p>
             <button><a href="#">En savoir plus</a></button>
         </div>
 
@@ -77,6 +80,7 @@ ob_start();
 
         </article>
 
+<!--
         <article class="photo">
 
             <img src="./public/images/logo/vin%20et%20verre.jpg" width="135">
@@ -95,6 +99,7 @@ ob_start();
                 </figure>
             </div>
         </article>
+-->
     </div>
 
 
