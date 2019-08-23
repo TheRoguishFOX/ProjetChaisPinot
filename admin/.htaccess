@@ -1,0 +1,10 @@
+AuthType Basic
+AuthName "Espace administrateur"
+AuthUserFile /wamp64/www/projet/ProjetChaisPinot/admin/view/.htpasswd
+Require valid-user
+
+
+#ceci créé une fenêtre de connexion pr rentrer dans un espace particulier
+#ceci protège toutes les données qui se situe dans le dossier dans lequel il est. 
+#Il faut un mot de passe et un nom d'utilisateur pour y rentrer
+

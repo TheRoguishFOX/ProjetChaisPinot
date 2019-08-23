@@ -1,6 +1,7 @@
 <?php
 
     require_once('./controller/frontend.php');
+require_once('./controller/Backend_admin.php');
 
 try{
 
@@ -68,7 +69,7 @@ try{
             }
         }
         
-        
+
     }
     
     
