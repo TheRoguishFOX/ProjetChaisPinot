@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./public/css/headerFooter.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/headerFooter.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <?= $css ?>
     <title><?= $title_page ?></title>
@@ -14,7 +14,7 @@
 <body>
     <header>
         <div id="logotitle">
-           <a href="index.php"> <img src="./public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
+           <a href="index.php"> <img src="../public/images/logo/logo_chais_pinot_blanc.png" alt="Logo Chais Pinot"></a>
             <h1>Administrateur</h1>
         </div>
     <a id="wrapper" class="ancre"></a>

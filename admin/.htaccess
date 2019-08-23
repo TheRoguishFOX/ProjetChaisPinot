@@ -1,6 +1,6 @@
 AuthType Basic
 AuthName "Espace administrateur"
-AuthUserFile /wamp64/www/projet/ProjetChaisPinot/admin/view/.htpasswd
+AuthUserFile /wamp64/www/projet/ProjetChaisPinot/admin/.htpasswd
 Require valid-user
 
 

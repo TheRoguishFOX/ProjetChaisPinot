@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 21 août 2019 à 14:56
--- Version du serveur :  5.7.24
--- Version de PHP :  7.3.1
+-- Client :  127.0.0.1
+-- Généré le :  Ven 23 Août 2019 à 15:27
+-- Version du serveur :  5.7.14
+-- Version de PHP :  5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -25,21 +23,50 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `biere`
+--
+
+CREATE TABLE `biere` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `text` text CHARACTER SET utf8 NOT NULL,
+  `price` float NOT NULL,
+  `photo` text CHARACTER SET utf8 NOT NULL,
+  `type` text CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `clients`
+--
+
+CREATE TABLE `clients` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `firstname` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `adress` text CHARACTER SET utf8 NOT NULL,
+  `phone` int(10) NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `comments`
 --
 
-DROP TABLE IF EXISTS `comments`;
-CREATE TABLE IF NOT EXISTS `comments` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `comments` (
+  `id` int(11) NOT NULL,
   `pseudo` varchar(80) NOT NULL,
   `note` int(1) NOT NULL,
   `text` text NOT NULL,
-  `date_crea` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+  `date_crea` datetime NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `comments`
+-- Contenu de la table `comments`
 --
 
 INSERT INTO `comments` (`id`, `pseudo`, `note`, `text`, `date_crea`) VALUES
@@ -50,18 +77,31 @@ INSERT INTO `comments` (`id`, `pseudo`, `note`, `text`, `date_crea`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `effervescents`
+--
+
+CREATE TABLE `effervescents` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `text` text CHARACTER SET utf8 NOT NULL,
+  `price` float NOT NULL,
+  `photo` text CHARACTER SET utf8 NOT NULL,
+  `type` text CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `newsletter`
 --
 
-DROP TABLE IF EXISTS `newsletter`;
-CREATE TABLE IF NOT EXISTS `newsletter` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `newsMail` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`,`newsMail`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+CREATE TABLE `newsletter` (
+  `id` int(11) NOT NULL,
+  `newsMail` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `newsletter`
+-- Contenu de la table `newsletter`
 --
 
 INSERT INTO `newsletter` (`id`, `newsMail`) VALUES
@@ -70,8 +110,232 @@ INSERT INTO `newsletter` (`id`, `newsMail`) VALUES
 (12, 'mr.carte@gmail.com'),
 (13, 'juliuse@gmail.com'),
 (16, 'juliuse18@gmail.com');
-COMMIT;
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `rhum`
+--
+
+CREATE TABLE `rhum` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `text` text CHARACTER SET utf8 NOT NULL,
+  `price` float NOT NULL,
+  `photo` text CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `spiritueux`
+--
+
+CREATE TABLE `spiritueux` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `text` text CHARACTER SET utf8 NOT NULL,
+  `price` float NOT NULL,
+  `photo` text CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `vin_blanc`
+--
+
+CREATE TABLE `vin_blanc` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `text` text CHARACTER SET utf8 NOT NULL,
+  `price` float NOT NULL,
+  `photo` text CHARACTER SET utf8 NOT NULL,
+  `type` text CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `vin_rose`
+--
+
+CREATE TABLE `vin_rose` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `text` text CHARACTER SET utf8 NOT NULL,
+  `price` float NOT NULL,
+  `photo` text CHARACTER SET utf8 NOT NULL,
+  `type` text CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `vin_rouge`
+--
+
+CREATE TABLE `vin_rouge` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `text` text CHARACTER SET utf8 NOT NULL,
+  `price` float NOT NULL,
+  `photo` text CHARACTER SET utf8 NOT NULL,
+  `type` text CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `vin_rouge`
+--
+
+INSERT INTO `vin_rouge` (`id`, `name`, `text`, `price`, `photo`, `type`) VALUES
+(1, 'Bordeaux supérieur Château Tertre de Courban 2015', 'lorem macon budule', 4, 'public/images/pd/charron.jpg', 'Bordeaux'),
+(9, 'bidule', 'loremadjencmZENFOMUZEBVmoubuvomz', 168, 'public/images/pd/ayala.jpg', 'bordeaux');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `whisky`
+--
+
+CREATE TABLE `whisky` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `text` text CHARACTER SET utf8 NOT NULL,
+  `price` float NOT NULL,
+  `photo` text CHARACTER SET utf8 NOT NULL,
+  `type` text CHARACTER SET utf8 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Index pour les tables exportées
+--
+
+--
+-- Index pour la table `biere`
+--
+ALTER TABLE `biere`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `clients`
+--
+ALTER TABLE `clients`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `effervescents`
+--
+ALTER TABLE `effervescents`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `newsletter`
+--
+ALTER TABLE `newsletter`
+  ADD PRIMARY KEY (`id`,`newsMail`);
+
+--
+-- Index pour la table `rhum`
+--
+ALTER TABLE `rhum`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `spiritueux`
+--
+ALTER TABLE `spiritueux`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `vin_blanc`
+--
+ALTER TABLE `vin_blanc`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `vin_rose`
+--
+ALTER TABLE `vin_rose`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `vin_rouge`
+--
+ALTER TABLE `vin_rouge`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `whisky`
+--
+ALTER TABLE `whisky`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `biere`
+--
+ALTER TABLE `biere`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `clients`
+--
+ALTER TABLE `clients`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+--
+-- AUTO_INCREMENT pour la table `effervescents`
+--
+ALTER TABLE `effervescents`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `newsletter`
+--
+ALTER TABLE `newsletter`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT pour la table `rhum`
+--
+ALTER TABLE `rhum`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `spiritueux`
+--
+ALTER TABLE `spiritueux`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `vin_blanc`
+--
+ALTER TABLE `vin_blanc`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `vin_rose`
+--
+ALTER TABLE `vin_rose`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `vin_rouge`
+--
+ALTER TABLE `vin_rouge`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT pour la table `whisky`
+--
+ALTER TABLE `whisky`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
