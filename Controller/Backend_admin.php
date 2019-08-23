@@ -31,15 +31,11 @@ function homeAdmin(){
         
         require('./view/view_adminComments.php');
     }
-
-    class AdminVins extends DataConnect {
         
-        function adminVins(){
-        require('./view/view_adminVin.php');
-        }
+    function adminVins(){
+    require('./view/view_adminVin.php');
+    }
         
-        function uploadPics(){
+    function uploadPics(){
             
-            
-        }
     }
