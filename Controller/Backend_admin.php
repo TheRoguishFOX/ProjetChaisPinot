@@ -13,7 +13,7 @@ function homeAdmin(){
     function homeAdminInsert($name, $text, $price, $photo, $type){
         
             $insertionproduits = new viewtest;
-            $insertionView = $insertionproduits->insertPD($name, $text, $price, $photo,$type);
+            $insertionView = $insertionproduits->insertPD($name, $text, $price, $photo, $type);
         
     }
 
